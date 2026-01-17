@@ -10,6 +10,8 @@ import Home2LeadershipSection from "./sections/Home2LeadershipSection";
 import Home2TestimonialsSection from "./sections/Home2TestimonialsSection";
 import Home2CtaSection from "./sections/Home2CtaSection";
 import Home2FooterSection from "./sections/Home2FooterSection";
+import PricingPlansSection from "../pricing/sections/PricingPlansSection";
+import ContactUs1MessageFormSection from "../contact-us-1/sections/ContactUs1MessageFormSection";
 
 export default function Home2Sections() {
   return (
@@ -25,6 +27,8 @@ export default function Home2Sections() {
       <Home2LeadershipSection />
       <Home2TestimonialsSection />
       <Home2CtaSection />
+      <PricingPlansSection animation="inview" />
+      <ContactUs1MessageFormSection animation="inview" />
       <Home2FooterSection />
     </div>
   );

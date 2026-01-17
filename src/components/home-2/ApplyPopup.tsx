@@ -6,15 +6,15 @@ export default function ApplyPopup() {
           <form id="wf-form-Name" name="wf-form-Name" data-name="Name" method="get" className="form" data-wf-page-id="64943f2a36915879aa1daee3" data-wf-element-id="ce6ec6aa-9506-a4b6-7684-7aa3ad40efbf">
             <div className="contact-us-input-wrapper">
               <div className="input-wrap">
-                <input className="first-input w-input" maxLength="256" name="First-name" data-name="First-name" placeholder="First Name" type="text" id="First-name" required="" />
-                <input className="second-input w-input" maxLength="256" name="Last-name" data-name="Last name" placeholder="Last name" type="text" id="Last-name" required="" />
+                <input className="first-input w-input" maxLength={256} name="First-name" data-name="First-name" placeholder="First Name" type="text" id="First-name" required />
+                <input className="second-input w-input" maxLength={256} name="Last-name" data-name="Last name" placeholder="Last name" type="text" id="Last-name" required />
               </div>
               <div className="input-wrap">
-                <input className="third-input w-input" maxLength="256" name="Your-Email" data-name="Your Email" placeholder="Your Email" type="email" id="Your-Email" required="" />
-                <input className="fourth-input w-input" maxLength="256" name="Your-Phone" data-name="Your Phone" placeholder="Your phone" type="tel" id="Your-Phone" required="" />
+                <input className="third-input w-input" maxLength={256} name="Your-Email" data-name="Your Email" placeholder="Your Email" type="email" id="Your-Email" required />
+                <input className="fourth-input w-input" maxLength={256} name="Your-Phone" data-name="Your Phone" placeholder="Your phone" type="tel" id="Your-Phone" required />
               </div>
             </div>
-            <textarea id="Field-6" name="Field" maxLength="5000" data-name="Field" placeholder="Your text" required="" className="contacts-textarea w-input"></textarea>
+            <textarea id="Field-6" name="Field" maxLength={5000} data-name="Field" placeholder="Your text" required className="contacts-textarea w-input"></textarea>
             <input type="submit" data-wait="Please wait..." className="primary-button full-width-mobile w-button" value="Submit" />
           </form>
           <div className="success-message w-form-done">

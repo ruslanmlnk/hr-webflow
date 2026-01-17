@@ -38,7 +38,7 @@ export default function Home2FooterSection() {
               <h4 className="form-title">subscribe</h4>
               <p className="footer-text">Stay current with all thinks JobBoard</p>
               <form id="wf-form-Email-Form" name="wf-form-Email-Form" data-name="Email Form" method="get" className="form" data-wf-page-id="64943f2a36915879aa1daee3" data-wf-element-id="2747963a-afb3-3313-2e75-f63c4a1e226a">
-                <input className="input w-input" maxLength="256" name="email-3" data-name="Email 3" placeholder="Email" type="email" id="email-3" required="" />
+                <input className="input w-input" maxLength={256} name="email-3" data-name="Email 3" placeholder="Email" type="email" id="email-3" required />
                 <div className="primary-white-button absolute">
                   <input type="submit" data-wait="Please wait..." className="white-button-text height w-button" value="Subscribe" />
                   <p className="text-icon">

@@ -3,7 +3,7 @@ import { webflowStyles } from "../styles";
 export default function Home2HowItWorksCardsSection() {
   return (
     <section className="how-it-works-section">
-      <img src="images/home-202-20how-20it-20work-20bg.svg" loading="lazy" width="361" alt="background image" className="home-background-image" />
+      <img src="/testbg.svg" loading="lazy" width="361" alt="background image" className="home-background-image" />
       <div className="w-layout-blockcontainer base-container position w-container">
         <div className="home-2-how-it-works-block-wrap">
           <div data-w-id="71611291-5fd5-9990-8f8c-a889124e3eb3" style={webflowStyles.opacity0} className="item-wrapper">
