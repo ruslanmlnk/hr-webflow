@@ -8,9 +8,9 @@ export default function Home2WhyJobboardSection() {
           <div className="why-jobboad-wrap">
             <div className="w-layout-blockcontainer base-container w-container">
               <div className="why-jobboard-wrapper">
-                <h6 data-w-id="c6f71348-e011-139e-bc51-8c9f8cd3e941" style={webflowStyles.opacity0} className="primary-title">why JOBboard</h6>
-                <h3 data-w-id="c6f71348-e011-139e-bc51-8c9f8cd3e943" style={webflowStyles.opacity0} className="medium-title">New way to get a job</h3>
-                <p data-w-id="c6f71348-e011-139e-bc51-8c9f8cd3e948" style={webflowStyles.opacity0} className="short-paragraph mobile-align-left">Upon gaining entry to the JobBoard platform, your initial task involves inputting your initial team positions or roles.</p>
+                <h6 data-w-id="c6f71348-e011-139e-bc51-8c9f8cd3e941" style={webflowStyles.opacity0} className="primary-title">Our expertise</h6>
+                <h3 data-w-id="c6f71348-e011-139e-bc51-8c9f8cd3e943" style={webflowStyles.opacity0} className="medium-title">We cover all recruitment needs</h3>
+                <p data-w-id="c6f71348-e011-139e-bc51-8c9f8cd3e948" style={webflowStyles.opacity0} className="short-paragraph mobile-align-left">We hire talent aligned with your business goals, timelines, and budget</p>
               </div>
             </div>
           </div>
@@ -24,7 +24,7 @@ export default function Home2WhyJobboardSection() {
                     <img src="images/users-02.svg" loading="lazy" alt="icon" />
                   </div>
                   <h4 className="new-way-title">Future of Job Hunting</h4>
-                  <p className="short-paragraph grey">Say goodbye to the traditional job search process and step into the future of employment opportunities.</p>
+                  <p className="short-paragraph white">Say goodbye to the traditional job search process and step into the future of employment opportunities.</p>
                 </a>
               </div>
               <div className="new-way-item-wrapper-copy">
@@ -33,7 +33,7 @@ export default function Home2WhyJobboardSection() {
                     <img src="images/code-square-02.svg" loading="lazy" alt="icon" />
                   </div>
                   <h4 className="new-way-title">Embracing Technology</h4>
-                  <p className="short-paragraph grey">The benefits of online learning platforms for upskilling and staying relevant in the job market.</p>
+                  <p className="short-paragraph white">The benefits of online learning platforms for upskilling and staying relevant in the job market.</p>
                 </a>
               </div>
               <div className="new-way-item-wrapper-copy">
@@ -42,7 +42,7 @@ export default function Home2WhyJobboardSection() {
                     <img src="images/face-smile.svg" loading="lazy" alt="icon" />
                   </div>
                   <h4 className="new-way-title">Be unique</h4>
-                  <p className="short-paragraph grey">Craft a detailed profile that effectively showcases your unique skills, notable accomplishmen.</p>
+                  <p className="short-paragraph white">Craft a detailed profile that effectively showcases your unique skills, notable accomplishmen.</p>
                 </a>
               </div>
               <div className="new-way-item-wrapper-copy">
@@ -51,7 +51,7 @@ export default function Home2WhyJobboardSection() {
                     <img src="images/code-square-02.svg" loading="lazy" alt="icon" />
                   </div>
                   <h4 className="new-way-title">Networking Strategies</h4>
-                  <p className="short-paragraph grey">Importance of personalizing networking interactions and maintaining long-term relationships.</p>
+                  <p className="short-paragraph white">Importance of personalizing networking interactions and maintaining long-term relationships.</p>
                 </a>
               </div>
             </div>
@@ -62,7 +62,7 @@ export default function Home2WhyJobboardSection() {
                     <img src="images/users-02.svg" loading="lazy" alt="icon" />
                   </div>
                   <h4 className="new-way-title">Future of Job Hunting</h4>
-                  <p className="short-paragraph grey">Say goodbye to the traditional job search process and step into the future of employment opportunities.</p>
+                  <p className="short-paragraph white">Say goodbye to the traditional job search process and step into the future of employment opportunities.</p>
                 </a>
               </div>
               <div className="new-way-item-wrapper-copy">
@@ -71,7 +71,7 @@ export default function Home2WhyJobboardSection() {
                     <img src="images/code-square-02.svg" loading="lazy" alt="icon" />
                   </div>
                   <h4 className="new-way-title">Embracing Technology</h4>
-                  <p className="short-paragraph grey">The benefits of online learning platforms for upskilling and staying relevant in the job market.</p>
+                  <p className="short-paragraph white">The benefits of online learning platforms for upskilling and staying relevant in the job market.</p>
                 </a>
               </div>
               <div className="new-way-item-wrapper-copy">
@@ -80,7 +80,7 @@ export default function Home2WhyJobboardSection() {
                     <img src="images/face-smile.svg" loading="lazy" alt="icon" />
                   </div>
                   <h4 className="new-way-title">Be unique</h4>
-                  <p className="short-paragraph grey">Craft a detailed profile that effectively showcases your unique skills, notable accomplishmen.</p>
+                  <p className="short-paragraph white">Craft a detailed profile that effectively showcases your unique skills, notable accomplishmen.</p>
                 </a>
               </div>
               <div className="new-way-item-wrapper-copy">
@@ -89,7 +89,7 @@ export default function Home2WhyJobboardSection() {
                     <img src="images/users-02.svg" loading="lazy" alt="icon" />
                   </div>
                   <h4 className="new-way-title">Networking Strategies</h4>
-                  <p className="short-paragraph grey">Importance of personalizing networking interactions and maintaining long-term relationships.</p>
+                  <p className="short-paragraph white">Importance of personalizing networking interactions and maintaining long-term relationships.</p>
                 </a>
               </div>
             </div>
