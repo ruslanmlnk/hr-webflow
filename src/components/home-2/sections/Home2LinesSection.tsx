@@ -3,32 +3,20 @@ import { webflowStyles } from "../styles";
 export default function Home2LinesSection() {
   return (
     <section className="section home-2bg-with-lines">
-      <img src="images/color-20line.svg" loading="lazy" alt="line" className="home-2-line-image" />
-      <img src="images/line-202.svg" loading="lazy" alt="line" className="line-image second" />
-      <img src="images/line-203.svg" loading="lazy" alt="line" className="line-image third" />
-      <img src="images/ellipse-2015-20-1-.svg" loading="lazy" alt="line" className="line-image fourth" />
-      <img src="images/ellipse-2019.svg" loading="lazy" alt="line" className="line-image fifth" />
-      <img src="images/line-206.svg" loading="lazy" alt="line" className="line-image sixth" />
-      <img src="images/ellipse-2020.svg" loading="lazy" alt="line" className="line-image seventh" />
-      <img src="images/line-208.svg" loading="lazy" alt="line" className="line-image eighth" />
-      <img src="images/line-209.svg" loading="lazy" alt="line" className="line-image nineth" />
-      <img src="images/line-2010.svg" loading="lazy" alt="line" className="line-image tenth" />
-      <img src="images/line-2011.svg" loading="lazy" alt="line" className="line-image last" />
+
       <div className="w-layout-blockcontainer base-container w-container">
         <div className="about-jobboard-wrapper home-2">
-          <div className="how-it-works-wrap home-2">
-            <div className="how-it-works-wrapper width">
-              <h6 data-w-id="1d91a305-ad38-c410-e1da-76e020a2f783" style={webflowStyles.opacity0} className="primary-title">ABOUT JOBboard</h6>
-              <h3 data-w-id="1d91a305-ad38-c410-e1da-76e020a2f785" style={webflowStyles.opacity0} className="medium-title">
-                One step to your
-                <span className="grey-text">future starts here</span>
-              </h3>
-              <p data-w-id="1d91a305-ad38-c410-e1da-76e020a2f787" style={webflowStyles.opacity0} className="short-paragraph">Receive a customized salary approximation based on your profile. Access reviews for more than 600,000 companies worldwide.</p>
+          <section className="section how-it-works" style={{ overflow: 'visible' }}>
+            <div className="w-layout-blockcontainer base-container w-container">
+              <div className="center-how-it-works-wrapper" style={{ overflow: 'visible', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+                <h6 data-w-id="78b1b3e7-47e2-8506-03d6-8fe5cb6336b3" style={webflowStyles.opacity0} className="primary-title">Real cases</h6>
+                <h3 data-w-id="78b1b3e7-47e2-8506-03d6-8fe5cb6336b5" style={webflowStyles.opacity0} className="medium-title">
+                  Closed roles with <span className="grey-text">measurable results</span>
+                </h3>
+                <p data-w-id="78b1b3e7-47e2-8506-03d6-8fe5cb6336b7" style={webflowStyles.opacity0} className="short-paragraph center">We showcase real recruitment cases under NDA — with contacts reached, interviews conducted, and time-to-hire</p>
+              </div>
             </div>
-            <a data-w-id="1d91a305-ad38-c410-e1da-76e020a2f789" style={webflowStyles.opacity0} href="/about-us" className="primary-white-button w-inline-block">
-              <div className="white-button-text">learn more</div>
-            </a>
-          </div>
+          </section>
           <div data-w-id="d5f52c81-4508-3818-4bbc-342ae3af498a" style={webflowStyles.opacity0} className="home-2-jobs-wrapper">
             <div className="wrapper-with-link">
               <h5 className="grey-title border">Jobs</h5>

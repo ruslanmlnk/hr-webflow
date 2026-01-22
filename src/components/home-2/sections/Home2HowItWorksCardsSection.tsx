@@ -11,7 +11,7 @@ export default function Home2HowItWorksCardsSection() {
               <img src="images/icon-20-stroke-.svg" loading="lazy" alt="icon" className="item-image" />
             </div>
             <div className="item-text-wraper">
-              <h4 className="tabs-title align-left">Quickly fill vacancies</h4>
+              <h4 className="tabs-title align-left white">Quickly fill vacancies</h4>
               <p className="custom-grey-text aling-left">Average time-to-hire is 7–21 days, depending on role complexity</p>
             </div>
           </div>
@@ -20,7 +20,7 @@ export default function Home2HowItWorksCardsSection() {
               <img src="images/icon-20-stroke-20-1-.svg" loading="lazy" alt="icon" className="item-image" />
             </div>
             <div className="item-text-wraper">
-              <h4 className="tabs-title align-left">Candidate assessment</h4>
+              <h4 className="tabs-title align-left white">Candidate assessment</h4>
               <p className="custom-grey-text aling-left">We use multi-stage screening and proprietary assessment tools</p>
             </div>
           </div>
@@ -29,7 +29,7 @@ export default function Home2HowItWorksCardsSection() {
               <img src="images/icon-20-stroke-20-2-.svg" loading="lazy" alt="icon" className="item-image" />
             </div>
             <div className="item-text-wraper">
-              <h4 className="tabs-title align-left">Cross-industry experience</h4>
+              <h4 className="tabs-title align-left white">Cross-industry experience</h4>
               <p className="custom-grey-text aling-left">Across IT, business, manufacturing, logistics, and services</p>
             </div>
           </div>

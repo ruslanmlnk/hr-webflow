@@ -7211,6 +7211,11 @@ blockquote {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
+  color: #000;
+}
+
+.tabs-title.white {
+  color: #fff;
 }
 
 .tabs-title.align-left {
@@ -7706,6 +7711,7 @@ blockquote {
   display: flex;
   overflow: visible;
   position: relative;
+  text-align: center;
 }
 
 .center-how-it-works-wrapper .primary-title,
@@ -10643,7 +10649,7 @@ html.testimonials-loop-fallback .bottom-testimon-full-width-wrap {
   }
 
   .center-how-it-works-wrapper {
-    width: 60%;
+    width: 62%;
   }
 
   .small-line._2 {
@@ -15563,6 +15569,20 @@ html.testimonials-loop-fallback .bottom-testimon-full-width-wrap {
   width: 100%;
 }
 
+@media screen and (max-width: 991px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
 .process-item {
   border-top: 1px solid #5E41BF;
   padding-top: 30px;
@@ -15602,6 +15622,14 @@ html.testimonials-loop-fallback .bottom-testimon-full-width-wrap {
   width: 100%;
   margin-bottom: 50px;
   text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .how-it-works-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
 }
 
 .how-it-works-wrapper {
