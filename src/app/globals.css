@@ -765,9 +765,11 @@ textarea.w-select {
 }
 
 .w-container {
-  max-width: 940px;
+  max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .w-container:before,
@@ -3721,7 +3723,9 @@ blockquote {
 .base-container {
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
@@ -4022,7 +4026,7 @@ blockquote {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -4662,7 +4666,8 @@ blockquote {
 
 .section-title-wrapper {
   text-align: center;
-  max-width: 740px;
+  width: 100%;
+  max-width: 1180px;
   margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
@@ -7697,7 +7702,7 @@ blockquote {
   grid-row-gap: 25px;
   flex-direction: column;
   align-items: center;
-  width: 68%;
+  width: 100%;
   display: flex;
   overflow: visible;
   position: relative;
@@ -15548,6 +15553,75 @@ html.testimonials-loop-fallback .bottom-testimon-full-width-wrap {
     left: auto;
     right: 12px;
   }
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 30px;
+  margin-top: 70px;
+  width: 100%;
+}
+
+.process-item {
+  border-top: 1px solid #5E41BF;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.process-item .primary-title {
+  color: #5E41BF;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.process-item .tabs-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.process-item .short-paragraph {
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.how-it-works-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.how-it-works-wrapper {
+  max-width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.primary-span {
+  background-image: linear-gradient(to bottom, #5E41BF, #D8CBFF);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #5E41BF;
+}
+
+.grey {
+  color: #6E6E6E;
 }
 
 #w-node-_44cd87ab-4d25-e9b1-2436-4a61d37b2a29-aa1daecd,
