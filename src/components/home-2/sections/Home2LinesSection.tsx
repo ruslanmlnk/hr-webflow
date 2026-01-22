@@ -19,8 +19,8 @@ export default function Home2LinesSection() {
           </section>
           <div data-w-id="d5f52c81-4508-3818-4bbc-342ae3af498a" style={webflowStyles.opacity0} className="home-2-jobs-wrapper">
             <div className="wrapper-with-link">
-              <h5 className="grey-title border">Jobs</h5>
-              <a href="/jobs-listing" className="link">All Jobs</a>
+              <h5 className="white-title border">Cases</h5>
+              {/* <a href="/jobs-listing" className="link">All Jobs</a> */}
             </div>
             <div className="jobs-list-wrapper home-2 w-dyn-list">
               <div data-w-id="d5f52c81-4508-3818-4bbc-342ae3af498e" role="list" className="home-2-jobs-collection-wrap w-dyn-items">

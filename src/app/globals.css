@@ -6931,10 +6931,11 @@ blockquote {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   -webkit-text-fill-color: inherit;
-  background-color: #13151a;
+  background: rgba(255, 255, 255, 0.1);
+
   background-image: none;
   background-clip: border-box;
-  border: 1px solid #4a3a7680;
+  border: 1px solid rgba(204, 199, 226, 1);
   border-radius: 8px;
   justify-content: space-between;
   align-items: center;
@@ -7541,7 +7542,8 @@ blockquote {
 .home-2-jobs-wrapper {
   -webkit-backdrop-filter: blur(17.5px);
   backdrop-filter: blur(17.5px);
-  background-color: #17191f66;
+  background: linear-gradient(180deg, #5E41BF 15%, #D8CBFF 100%);
+
   border: 1px solid #4a3a7680;
   border-radius: 8px;
   width: 100%;
@@ -10001,6 +10003,7 @@ html.testimonials-loop-fallback .bottom-testimon-full-width-wrap {
 
 .wrapper-with-link {
   border-bottom: 1px solid #ffffff1a;
+  color: #fff;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
