@@ -1,0 +1,84 @@
+<svg width="506" height="359" viewBox="0 0 506 359" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2091_930)">
+<path d="M0.178711 83.9054C24.8816 83.9054 44.9073 261.733 44.9073 481.095C44.9073 700.459 24.8817 878.285 0.178746 878.285" stroke="url(#paint0_linear_2091_930)" stroke-opacity="0.4" stroke-width="0.636974"/>
+</g>
+<g clip-path="url(#clip1_2091_930)">
+<path d="M64.4092 57.7839C89.1121 57.7839 109.138 235.612 109.138 454.974C109.138 674.337 89.1121 852.164 64.4092 852.164" stroke="url(#paint1_linear_2091_930)" stroke-opacity="0.4" stroke-width="0.636974"/>
+</g>
+<g clip-path="url(#clip2_2091_930)">
+<path d="M128.639 38.1034C153.342 38.1034 173.368 215.931 173.368 435.293C173.368 654.656 153.342 832.483 128.639 832.483" stroke="url(#paint2_linear_2091_930)" stroke-opacity="0.4" stroke-width="0.636974"/>
+</g>
+<g clip-path="url(#clip3_2091_930)">
+<path d="M188.396 17.7682C213.099 17.7682 233.125 195.596 233.125 414.958C233.125 634.321 213.099 812.148 188.397 812.148" stroke="url(#paint3_linear_2091_930)" stroke-opacity="0.4" stroke-width="0.636974"/>
+</g>
+<g clip-path="url(#clip4_2091_930)">
+<path d="M505.612 83.9054C480.909 83.9054 460.884 261.733 460.884 481.095C460.884 700.459 480.909 878.285 505.612 878.285" stroke="url(#paint4_linear_2091_930)" stroke-opacity="0.4" stroke-width="0.636974"/>
+</g>
+<g clip-path="url(#clip5_2091_930)">
+<path d="M441.382 57.7839C416.679 57.7839 396.653 235.612 396.653 454.974C396.653 674.337 416.679 852.164 441.382 852.164" stroke="url(#paint5_linear_2091_930)" stroke-opacity="0.4" stroke-width="0.636974"/>
+</g>
+<g clip-path="url(#clip6_2091_930)">
+<path d="M377.151 38.1034C352.448 38.1034 332.423 215.931 332.423 435.293C332.423 654.656 352.448 832.483 377.151 832.483" stroke="url(#paint6_linear_2091_930)" stroke-opacity="0.4" stroke-width="0.636974"/>
+</g>
+<g clip-path="url(#clip7_2091_930)">
+<path d="M317.394 22.2476C292.691 22.2476 272.665 200.076 272.665 419.437C272.665 638.801 292.691 816.627 317.394 816.627" stroke="url(#paint7_linear_2091_930)" stroke-opacity="0.4" stroke-width="0.636974"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2091_930" x1="22.543" y1="83.9054" x2="22.543" y2="221.426" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6857F6" stop-opacity="0"/>
+<stop offset="1" stop-color="#3D3390"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2091_930" x1="86.7735" y1="57.7839" x2="86.7735" y2="195.304" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6857F6" stop-opacity="0"/>
+<stop offset="1" stop-color="#3D3390"/>
+</linearGradient>
+<linearGradient id="paint2_linear_2091_930" x1="151.003" y1="38.1034" x2="151.003" y2="175.623" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6857F6" stop-opacity="0"/>
+<stop offset="1" stop-color="#3D3390"/>
+</linearGradient>
+<linearGradient id="paint3_linear_2091_930" x1="210.761" y1="17.7682" x2="210.761" y2="155.288" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6857F6" stop-opacity="0"/>
+<stop offset="1" stop-color="#3D3390"/>
+</linearGradient>
+<linearGradient id="paint4_linear_2091_930" x1="483.248" y1="83.9054" x2="483.248" y2="221.426" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6857F6" stop-opacity="0"/>
+<stop offset="1" stop-color="#3D3390"/>
+</linearGradient>
+<linearGradient id="paint5_linear_2091_930" x1="419.018" y1="57.7839" x2="419.018" y2="195.304" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6857F6" stop-opacity="0"/>
+<stop offset="1" stop-color="#3D3390"/>
+</linearGradient>
+<linearGradient id="paint6_linear_2091_930" x1="354.787" y1="38.1034" x2="354.787" y2="175.623" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6857F6" stop-opacity="0"/>
+<stop offset="1" stop-color="#3D3390"/>
+</linearGradient>
+<linearGradient id="paint7_linear_2091_930" x1="295.03" y1="22.2476" x2="295.03" y2="159.768" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6857F6" stop-opacity="0"/>
+<stop offset="1" stop-color="#3D3390"/>
+</linearGradient>
+<clipPath id="clip0_2091_930">
+<rect width="45.0864" height="274.812" fill="white" transform="translate(0 83.7265)"/>
+</clipPath>
+<clipPath id="clip1_2091_930">
+<rect width="45.0864" height="274.812" fill="white" transform="translate(64.2305 57.605)"/>
+</clipPath>
+<clipPath id="clip2_2091_930">
+<rect width="45.0864" height="274.812" fill="white" transform="translate(128.46 37.9244)"/>
+</clipPath>
+<clipPath id="clip3_2091_930">
+<rect width="45.0864" height="274.812" fill="white" transform="translate(188.218)"/>
+</clipPath>
+<clipPath id="clip4_2091_930">
+<rect width="45.0864" height="274.812" fill="white" transform="matrix(-1 0 0 1 505.791 83.7265)"/>
+</clipPath>
+<clipPath id="clip5_2091_930">
+<rect width="45.0864" height="274.812" fill="white" transform="matrix(-1 0 0 1 441.561 57.605)"/>
+</clipPath>
+<clipPath id="clip6_2091_930">
+<rect width="45.0864" height="274.812" fill="white" transform="matrix(-1 0 0 1 377.33 37.9244)"/>
+</clipPath>
+<clipPath id="clip7_2091_930">
+<rect width="45.0864" height="274.812" fill="white" transform="matrix(-1 0 0 1 317.573 22.0687)"/>
+</clipPath>
+</defs>
+</svg>
