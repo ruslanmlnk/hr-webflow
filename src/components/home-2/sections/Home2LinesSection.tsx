@@ -27,360 +27,120 @@ export default function Home2LinesSection() {
                 <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
                   <div className="about-positon-wrapper height">
                     <div className="position-wrap">
-                      <a href="/jobs/web-developer" className="jobs-title-link w-inline-block">
-                        <h5 className="jobs-title">Web Developer</h5>
-                      </a>
+                      <h5 className="jobs-title">Affiliate Manager</h5>
                       <div className="location-type-wrapper wrap">
-                        <div className="location-item-wrap">
-                          <img src="images/globe-01.svg" loading="lazy" alt="icon" />
-                          <a href="/companies/colored" className="company-link w-inline-block">
-                            <p className="jobs-parapgraph">Paris</p>
-                          </a>
-                        </div>
-                        <div className="location-item-wrap">
-                          <img src="images/home-smile.svg" loading="lazy" alt="icon" />
-                          <p className="jobs-parapgraph">Remote</p>
-                        </div>
+                        <p className="jobs-parapgraph">Contacts: 23 &nbsp; Interviews: 8 &nbsp; Completion time: 2.5 weeks</p>
                       </div>
-                    </div>
-                    <div className="right-salary-wrapper width">
-                      <div className="jobs-salary-wrapper">
-                        <img src="images/bank-note-01.svg" loading="lazy" alt="icon" />
-                        <p className="jobs-parapgraph">$55k</p>
-                      </div>
-                      <a data-w-id="d5f52c81-4508-3818-4bbc-342ae3af499f" href="#" className="primary-white-button w-inline-block">
-                        <div className="white-button-small-text">Apply</div>
-                      </a>
                     </div>
                   </div>
                 </div>
                 <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
                   <div className="about-positon-wrapper height">
                     <div className="position-wrap">
-                      <a href="/jobs/software-developer" className="jobs-title-link w-inline-block">
-                        <h5 className="jobs-title">Software Developer</h5>
-                      </a>
+                      <h5 className="jobs-title">Media Buyer</h5>
                       <div className="location-type-wrapper wrap">
-                        <div className="location-item-wrap">
-                          <img src="images/globe-01.svg" loading="lazy" alt="icon" />
-                          <a href="/companies/fintechy" className="company-link w-inline-block">
-                            <p className="jobs-parapgraph">New York</p>
-                          </a>
-                        </div>
-                        <div className="location-item-wrap">
-                          <img src="images/home-smile.svg" loading="lazy" alt="icon" />
-                          <p className="jobs-parapgraph">Remote</p>
-                        </div>
+                        <p className="jobs-parapgraph">Contacts: 32 &nbsp; Interviews: 16 &nbsp; Completion time: 3 weeks</p>
                       </div>
-                    </div>
-                    <div className="right-salary-wrapper width">
-                      <div className="jobs-salary-wrapper">
-                        <img src="images/bank-note-01.svg" loading="lazy" alt="icon" />
-                        <p className="jobs-parapgraph">$65k</p>
-                      </div>
-                      <a data-w-id="d5f52c81-4508-3818-4bbc-342ae3af499f" href="#" className="primary-white-button w-inline-block">
-                        <div className="white-button-small-text">Apply</div>
-                      </a>
                     </div>
                   </div>
                 </div>
                 <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
                   <div className="about-positon-wrapper height">
                     <div className="position-wrap">
-                      <a href="/jobs/graphic-designer" className="jobs-title-link w-inline-block">
-                        <h5 className="jobs-title">Graphic Designer</h5>
-                      </a>
+                      <h5 className="jobs-title">SMM Manager</h5>
                       <div className="location-type-wrapper wrap">
-                        <div className="location-item-wrap">
-                          <img src="images/globe-01.svg" loading="lazy" alt="icon" />
-                          <a href="/companies/gradient" className="company-link w-inline-block">
-                            <p className="jobs-parapgraph">Las Vegas</p>
-                          </a>
-                        </div>
-                        <div className="location-item-wrap">
-                          <img src="images/home-smile.svg" loading="lazy" alt="icon" />
-                          <p className="jobs-parapgraph">Remote</p>
-                        </div>
+                        <p className="jobs-parapgraph">Contacts: 30 &nbsp; Interviews: 4 &nbsp; Completion time: 2-3 weeks</p>
                       </div>
-                    </div>
-                    <div className="right-salary-wrapper width">
-                      <div className="jobs-salary-wrapper">
-                        <img src="images/bank-note-01.svg" loading="lazy" alt="icon" />
-                        <p className="jobs-parapgraph">$65k</p>
-                      </div>
-                      <a data-w-id="d5f52c81-4508-3818-4bbc-342ae3af499f" href="#" className="primary-white-button w-inline-block">
-                        <div className="white-button-small-text">Apply</div>
-                      </a>
                     </div>
                   </div>
                 </div>
                 <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
                   <div className="about-positon-wrapper height">
                     <div className="position-wrap">
-                      <a href="/jobs/brand-manager" className="jobs-title-link w-inline-block">
-                        <h5 className="jobs-title">Brand Manager</h5>
-                      </a>
+                      <h5 className="jobs-title">Head of Sales</h5>
                       <div className="location-type-wrapper wrap">
-                        <div className="location-item-wrap">
-                          <img src="images/globe-01.svg" loading="lazy" alt="icon" />
-                          <a href="/companies/greenly" className="company-link w-inline-block">
-                            <p className="jobs-parapgraph">Los Angeles</p>
-                          </a>
-                        </div>
-                        <div className="location-item-wrap">
-                          <img src="images/home-smile.svg" loading="lazy" alt="icon" />
-                          <p className="jobs-parapgraph">Remote</p>
-                        </div>
+                        <p className="jobs-parapgraph">Contacts: 9 &nbsp; Interviews: 5 &nbsp; Completion time: 4-5 weeks</p>
                       </div>
-                    </div>
-                    <div className="right-salary-wrapper width">
-                      <div className="jobs-salary-wrapper">
-                        <img src="images/bank-note-01.svg" loading="lazy" alt="icon" />
-                        <p className="jobs-parapgraph">$65k</p>
-                      </div>
-                      <a data-w-id="d5f52c81-4508-3818-4bbc-342ae3af499f" href="#" className="primary-white-button w-inline-block">
-                        <div className="white-button-small-text">Apply</div>
-                      </a>
                     </div>
                   </div>
                 </div>
                 <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
                   <div className="about-positon-wrapper height">
                     <div className="position-wrap">
-                      <a href="/jobs/social-media-manager" className="jobs-title-link w-inline-block">
-                        <h5 className="jobs-title">Social Media Manager</h5>
-                      </a>
+                      <h5 className="jobs-title">Product Manager</h5>
                       <div className="location-type-wrapper wrap">
-                        <div className="location-item-wrap">
-                          <img src="images/globe-01.svg" loading="lazy" alt="icon" />
-                          <a href="/companies/lineo" className="company-link w-inline-block">
-                            <p className="jobs-parapgraph">California</p>
-                          </a>
-                        </div>
-                        <div className="location-item-wrap">
-                          <img src="images/home-smile.svg" loading="lazy" alt="icon" />
-                          <p className="jobs-parapgraph">Remote</p>
-                        </div>
+                        <p className="jobs-parapgraph">Contacts: 41 &nbsp; Interviews: 8 &nbsp; Completion time: 4-5 weeks</p>
                       </div>
-                    </div>
-                    <div className="right-salary-wrapper width">
-                      <div className="jobs-salary-wrapper">
-                        <img src="images/bank-note-01.svg" loading="lazy" alt="icon" />
-                        <p className="jobs-parapgraph">$45</p>
-                      </div>
-                      <a data-w-id="d5f52c81-4508-3818-4bbc-342ae3af499f" href="#" className="primary-white-button w-inline-block">
-                        <div className="white-button-small-text">Apply</div>
-                      </a>
                     </div>
                   </div>
                 </div>
                 <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
                   <div className="about-positon-wrapper height">
                     <div className="position-wrap">
-                      <a href="/jobs/marketing-coordinator" className="jobs-title-link w-inline-block">
-                        <h5 className="jobs-title">Marketing Coordinator</h5>
-                      </a>
+                      <h5 className="jobs-title">Business Analyst</h5>
                       <div className="location-type-wrapper wrap">
-                        <div className="location-item-wrap">
-                          <img src="images/globe-01.svg" loading="lazy" alt="icon" />
-                          <a href="/companies/pipe" className="company-link w-inline-block">
-                            <p className="jobs-parapgraph">London</p>
-                          </a>
-                        </div>
-                        <div className="location-item-wrap">
-                          <img src="images/home-smile.svg" loading="lazy" alt="icon" />
-                          <p className="jobs-parapgraph">Remote</p>
-                        </div>
+                        <p className="jobs-parapgraph">Contacts: 40 &nbsp; Interviews: 12 &nbsp; Completion time: 3-4 weeks</p>
                       </div>
-                    </div>
-                    <div className="right-salary-wrapper width">
-                      <div className="jobs-salary-wrapper">
-                        <img src="images/bank-note-01.svg" loading="lazy" alt="icon" />
-                        <p className="jobs-parapgraph">$55k</p>
-                      </div>
-                      <a data-w-id="d5f52c81-4508-3818-4bbc-342ae3af499f" href="#" className="primary-white-button w-inline-block">
-                        <div className="white-button-small-text">Apply</div>
-                      </a>
                     </div>
                   </div>
                 </div>
                 <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
                   <div className="about-positon-wrapper height">
                     <div className="position-wrap">
-                      <a href="/jobs/investment-banking-analyst" className="jobs-title-link w-inline-block">
-                        <h5 className="jobs-title">Investment Banking Analyst</h5>
-                      </a>
+                      <h5 className="jobs-title">UX/UI Designer</h5>
                       <div className="location-type-wrapper wrap">
-                        <div className="location-item-wrap">
-                          <img src="images/globe-01.svg" loading="lazy" alt="icon" />
-                          <a href="/companies/colored" className="company-link w-inline-block">
-                            <p className="jobs-parapgraph">Paris</p>
-                          </a>
-                        </div>
-                        <div className="location-item-wrap">
-                          <img src="images/home-smile.svg" loading="lazy" alt="icon" />
-                          <p className="jobs-parapgraph">Remote</p>
-                        </div>
+                        <p className="jobs-parapgraph">Contacts: 20 &nbsp; Interviews: 6 &nbsp; Completion time: 3-4 weeks</p>
                       </div>
-                    </div>
-                    <div className="right-salary-wrapper width">
-                      <div className="jobs-salary-wrapper">
-                        <img src="images/bank-note-01.svg" loading="lazy" alt="icon" />
-                        <p className="jobs-parapgraph">$65k</p>
-                      </div>
-                      <a data-w-id="d5f52c81-4508-3818-4bbc-342ae3af499f" href="#" className="primary-white-button w-inline-block">
-                        <div className="white-button-small-text">Apply</div>
-                      </a>
                     </div>
                   </div>
                 </div>
                 <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
                   <div className="about-positon-wrapper height">
                     <div className="position-wrap">
-                      <a href="/jobs/financial-analyst" className="jobs-title-link w-inline-block">
-                        <h5 className="jobs-title">Financial Analyst</h5>
-                      </a>
+                      <h5 className="jobs-title">Finance Manager</h5>
                       <div className="location-type-wrapper wrap">
-                        <div className="location-item-wrap">
-                          <img src="images/globe-01.svg" loading="lazy" alt="icon" />
-                          <a href="/companies/fintechy" className="company-link w-inline-block">
-                            <p className="jobs-parapgraph">New York</p>
-                          </a>
-                        </div>
-                        <div className="location-item-wrap">
-                          <img src="images/home-smile.svg" loading="lazy" alt="icon" />
-                          <p className="jobs-parapgraph">Remote</p>
-                        </div>
+                        <p className="jobs-parapgraph">Contacts: 18 &nbsp; Interviews: 2 &nbsp; Completion time: 3-4 weeks</p>
                       </div>
-                    </div>
-                    <div className="right-salary-wrapper width">
-                      <div className="jobs-salary-wrapper">
-                        <img src="images/bank-note-01.svg" loading="lazy" alt="icon" />
-                        <p className="jobs-parapgraph">$55k</p>
-                      </div>
-                      <a data-w-id="d5f52c81-4508-3818-4bbc-342ae3af499f" href="#" className="primary-white-button w-inline-block">
-                        <div className="white-button-small-text">Apply</div>
-                      </a>
                     </div>
                   </div>
                 </div>
                 <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
                   <div className="about-positon-wrapper height">
                     <div className="position-wrap">
-                      <a href="/jobs/financial-manager" className="jobs-title-link w-inline-block">
-                        <h5 className="jobs-title">Financial Manager</h5>
-                      </a>
+                      <h5 className="jobs-title">Senior Backend Developer</h5>
                       <div className="location-type-wrapper wrap">
-                        <div className="location-item-wrap">
-                          <img src="images/globe-01.svg" loading="lazy" alt="icon" />
-                          <a href="/companies/gradient" className="company-link w-inline-block">
-                            <p className="jobs-parapgraph">Las Vegas</p>
-                          </a>
-                        </div>
-                        <div className="location-item-wrap">
-                          <img src="images/home-smile.svg" loading="lazy" alt="icon" />
-                          <p className="jobs-parapgraph">Remote</p>
-                        </div>
+                        <p className="jobs-parapgraph">Contacts: 41 &nbsp; Interviews: 8 &nbsp; Completion time: 4-5 weeks</p>
                       </div>
-                    </div>
-                    <div className="right-salary-wrapper width">
-                      <div className="jobs-salary-wrapper">
-                        <img src="images/bank-note-01.svg" loading="lazy" alt="icon" />
-                        <p className="jobs-parapgraph">$80k-$85k</p>
-                      </div>
-                      <a data-w-id="d5f52c81-4508-3818-4bbc-342ae3af499f" href="#" className="primary-white-button w-inline-block">
-                        <div className="white-button-small-text">Apply</div>
-                      </a>
                     </div>
                   </div>
                 </div>
                 <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
                   <div className="about-positon-wrapper height">
                     <div className="position-wrap">
-                      <a href="/jobs/sales-manager" className="jobs-title-link w-inline-block">
-                        <h5 className="jobs-title">Sales Manager</h5>
-                      </a>
+                      <h5 className="jobs-title">Full-Stack Developer</h5>
                       <div className="location-type-wrapper wrap">
-                        <div className="location-item-wrap">
-                          <img src="images/globe-01.svg" loading="lazy" alt="icon" />
-                          <a href="/companies/greenly" className="company-link w-inline-block">
-                            <p className="jobs-parapgraph">Los Angeles</p>
-                          </a>
-                        </div>
-                        <div className="location-item-wrap">
-                          <img src="images/home-smile.svg" loading="lazy" alt="icon" />
-                          <p className="jobs-parapgraph">Remote</p>
-                        </div>
+                        <p className="jobs-parapgraph">Contacts: 40 &nbsp; Interviews: 6 &nbsp; Completion time: 3-4 weeks</p>
                       </div>
-                    </div>
-                    <div className="right-salary-wrapper width">
-                      <div className="jobs-salary-wrapper">
-                        <img src="images/bank-note-01.svg" loading="lazy" alt="icon" />
-                        <p className="jobs-parapgraph">$75k</p>
-                      </div>
-                      <a data-w-id="d5f52c81-4508-3818-4bbc-342ae3af499f" href="#" className="primary-white-button w-inline-block">
-                        <div className="white-button-small-text">Apply</div>
-                      </a>
                     </div>
                   </div>
                 </div>
                 <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
                   <div className="about-positon-wrapper height">
                     <div className="position-wrap">
-                      <a href="/jobs/human-resources-manager" className="jobs-title-link w-inline-block">
-                        <h5 className="jobs-title">Human Resources Manager</h5>
-                      </a>
+                      <h5 className="jobs-title">DevOps Engineer</h5>
                       <div className="location-type-wrapper wrap">
-                        <div className="location-item-wrap">
-                          <img src="images/globe-01.svg" loading="lazy" alt="icon" />
-                          <a href="/companies/lineo" className="company-link w-inline-block">
-                            <p className="jobs-parapgraph">California</p>
-                          </a>
-                        </div>
-                        <div className="location-item-wrap">
-                          <img src="images/home-smile.svg" loading="lazy" alt="icon" />
-                          <p className="jobs-parapgraph">Remote</p>
-                        </div>
+                        <p className="jobs-parapgraph">Contacts: 55 &nbsp; Interviews: 6 &nbsp; Completion time: 4-5 weeks</p>
                       </div>
-                    </div>
-                    <div className="right-salary-wrapper width">
-                      <div className="jobs-salary-wrapper">
-                        <img src="images/bank-note-01.svg" loading="lazy" alt="icon" />
-                        <p className="jobs-parapgraph">$65k</p>
-                      </div>
-                      <a data-w-id="d5f52c81-4508-3818-4bbc-342ae3af499f" href="#" className="primary-white-button w-inline-block">
-                        <div className="white-button-small-text">Apply</div>
-                      </a>
                     </div>
                   </div>
                 </div>
                 <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
                   <div className="about-positon-wrapper height">
                     <div className="position-wrap">
-                      <a href="/jobs/mechanical-engineer" className="jobs-title-link w-inline-block">
-                        <h5 className="jobs-title">Mechanical Engineer</h5>
-                      </a>
+                      <h5 className="jobs-title">System Administrator</h5>
                       <div className="location-type-wrapper wrap">
-                        <div className="location-item-wrap">
-                          <img src="images/globe-01.svg" loading="lazy" alt="icon" />
-                          <a href="/companies/pipe" className="company-link w-inline-block">
-                            <p className="jobs-parapgraph">London</p>
-                          </a>
-                        </div>
-                        <div className="location-item-wrap">
-                          <img src="images/home-smile.svg" loading="lazy" alt="icon" />
-                          <p className="jobs-parapgraph">Remote</p>
-                        </div>
+                        <p className="jobs-parapgraph">Contacts: 32 &nbsp; Interviews: 4 &nbsp; Completion time: 2 weeks</p>
                       </div>
-                    </div>
-                    <div className="right-salary-wrapper width">
-                      <div className="jobs-salary-wrapper">
-                        <img src="images/bank-note-01.svg" loading="lazy" alt="icon" />
-                        <p className="jobs-parapgraph">$100k</p>
-                      </div>
-                      <a data-w-id="d5f52c81-4508-3818-4bbc-342ae3af499f" href="#" className="primary-white-button w-inline-block">
-                        <div className="white-button-small-text">Apply</div>
-                      </a>
                     </div>
                   </div>
                 </div>
