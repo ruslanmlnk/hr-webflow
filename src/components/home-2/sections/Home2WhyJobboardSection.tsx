@@ -9,7 +9,9 @@ export default function Home2WhyJobboardSection() {
             <div className="w-layout-blockcontainer base-container w-container">
               <div className="why-jobboard-wrapper">
                 <h6 data-w-id="c6f71348-e011-139e-bc51-8c9f8cd3e941" style={webflowStyles.opacity0} className="primary-title">Our expertise</h6>
-                <h3 data-w-id="c6f71348-e011-139e-bc51-8c9f8cd3e943" style={webflowStyles.opacity0} className="medium-title">We cover all recruitment needs</h3>
+                <h3 data-w-id="c6f71348-e011-139e-bc51-8c9f8cd3e943" style={webflowStyles.opacity0} className="medium-title">
+                  We cover all <span className="accent-primary-text">recruitment needs</span>
+                </h3>
                 <p data-w-id="c6f71348-e011-139e-bc51-8c9f8cd3e948" style={webflowStyles.opacity0} className="short-paragraph mobile-align-left">We hire talent aligned with your business goals, timelines, and budget</p>
               </div>
             </div>

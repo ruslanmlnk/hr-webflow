@@ -12,7 +12,7 @@ export default function ContactUs1MessageFormSection({ animation = "inview" }: P
   return (
     <div className="section without-top-spacing">
       <div className="base-container w-container">
-        <div className="contacts-wrapper contacts-wrapper--top contacts-wrapper--form-wide">
+        <div className="contacts-wrapper contacts-wrapper--top contacts-wrapper--form-wide contacts-wrapper--side-stretch">
           {isInView ? (
             <InView className="contacts-content-wrapper inview-fade-up inview-delay-0">
               <ContactUs1SocialCards />
