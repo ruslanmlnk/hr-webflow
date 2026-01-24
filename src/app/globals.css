@@ -7927,7 +7927,9 @@ blockquote {
   max-width: 316px;
   display: flex;
 }
-
+.why-jobboard-wrapper .medium-title{
+  text-align:  left !important;
+}
 .why-jobboad-wrap {
   grid-column-gap: 50px;
   align-items: center;
