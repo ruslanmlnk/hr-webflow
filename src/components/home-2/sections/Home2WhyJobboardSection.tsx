@@ -1,6 +1,7 @@
 import { webflowStyles } from "../styles";
+import type { Home2WhyJobboardSectionProps } from "../types/types";
 
-export default function Home2WhyJobboardSection() {
+export default function Home2WhyJobboardSection({ cards }: Home2WhyJobboardSectionProps) {
   return (
     <section className="section without-top-spacing-copy">
       <div className="why-job-board">
@@ -20,80 +21,30 @@ export default function Home2WhyJobboardSection() {
         <div className="why-job-board-home-2">
           <div className="jobboard-wrapper">
             <div data-w-id="1783743b-37c5-b9b8-652d-e10224129c09" className="jobboard-items-wrapper">
-              <div className="new-way-item-wrapper-copy">
-                <a href="/jobs-listing" className="new-way-job-link w-inline-block">
-                  <div className="image-wrapp image-bg-wrapper">
-                    <img src="images/users-02.svg" loading="lazy" alt="icon" />
+              {cards.map((card) => (
+                <div key={card.title} className="new-way-item-wrapper-copy">
+                  <div className="new-way-job-link w-inline-block">
+                    <div className="image-wrapp image-bg-wrapper">
+                      <img src={card.icon} loading="lazy" alt="icon" />
+                    </div>
+                    <h4 className="new-way-title" data-text={card.title}>{card.title}</h4>
+                    <p className="short-paragraph white">{card.description}</p>
                   </div>
-                  <h4 className="new-way-title">Future of Job Hunting</h4>
-                  <p className="short-paragraph white">Say goodbye to the traditional job search process and step into the future of employment opportunities.</p>
-                </a>
-              </div>
-              <div className="new-way-item-wrapper-copy">
-                <a href="/about-us" className="new-way-job-link w-inline-block">
-                  <div className="image-wrapp image-bg-wrapper">
-                    <img src="images/code-square-02.svg" loading="lazy" alt="icon" />
-                  </div>
-                  <h4 className="new-way-title">Embracing Technology</h4>
-                  <p className="short-paragraph white">The benefits of online learning platforms for upskilling and staying relevant in the job market.</p>
-                </a>
-              </div>
-              <div className="new-way-item-wrapper-copy">
-                <a href="/templates/licensing" className="new-way-job-link w-inline-block">
-                  <div className="image-wrapp image-bg-wrapper">
-                    <img src="images/face-smile.svg" loading="lazy" alt="icon" />
-                  </div>
-                  <h4 className="new-way-title">Be unique</h4>
-                  <p className="short-paragraph white">Craft a detailed profile that effectively showcases your unique skills, notable accomplishmen.</p>
-                </a>
-              </div>
-              <div className="new-way-item-wrapper-copy">
-                <a href="/blog" className="new-way-job-link w-inline-block">
-                  <div className="image-wrapp image-bg-wrapper">
-                    <img src="images/code-square-02.svg" loading="lazy" alt="icon" />
-                  </div>
-                  <h4 className="new-way-title">Networking Strategies</h4>
-                  <p className="short-paragraph white">Importance of personalizing networking interactions and maintaining long-term relationships.</p>
-                </a>
-              </div>
+                </div>
+              ))}
             </div>
             <div data-w-id="1ed52d35-1d76-824f-c4f4-5a30d704f7dd" className="jobboard-items-wrapper">
-              <div className="new-way-item-wrapper-copy">
-                <a href="/jobs-listing" className="new-way-job-link w-inline-block">
-                  <div className="image-wrapp image-bg-wrapper">
-                    <img src="images/users-02.svg" loading="lazy" alt="icon" />
+              {cards.map((card) => (
+                <div key={`dup-${card.title}`} className="new-way-item-wrapper-copy">
+                  <div className="new-way-job-link w-inline-block">
+                    <div className="image-wrapp image-bg-wrapper">
+                      <img src={card.icon} loading="lazy" alt="icon" />
+                    </div>
+                    <h4 className="new-way-title" data-text={card.title}>{card.title}</h4>
+                    <p className="short-paragraph white">{card.description}</p>
                   </div>
-                  <h4 className="new-way-title">Future of Job Hunting</h4>
-                  <p className="short-paragraph white">Say goodbye to the traditional job search process and step into the future of employment opportunities.</p>
-                </a>
-              </div>
-              <div className="new-way-item-wrapper-copy">
-                <a href="/about-us" className="new-way-job-link w-inline-block">
-                  <div className="image-wrapp image-bg-wrapper">
-                    <img src="images/code-square-02.svg" loading="lazy" alt="icon" />
-                  </div>
-                  <h4 className="new-way-title">Embracing Technology</h4>
-                  <p className="short-paragraph white">The benefits of online learning platforms for upskilling and staying relevant in the job market.</p>
-                </a>
-              </div>
-              <div className="new-way-item-wrapper-copy">
-                <a href="/cv-post" className="new-way-job-link w-inline-block">
-                  <div className="image-wrapp image-bg-wrapper">
-                    <img src="images/face-smile.svg" loading="lazy" alt="icon" />
-                  </div>
-                  <h4 className="new-way-title">Be unique</h4>
-                  <p className="short-paragraph white">Craft a detailed profile that effectively showcases your unique skills, notable accomplishmen.</p>
-                </a>
-              </div>
-              <div className="new-way-item-wrapper-copy">
-                <a href="/blog" className="new-way-job-link w-inline-block">
-                  <div className="image-wrapp image-bg-wrapper">
-                    <img src="images/users-02.svg" loading="lazy" alt="icon" />
-                  </div>
-                  <h4 className="new-way-title">Networking Strategies</h4>
-                  <p className="short-paragraph white">Importance of personalizing networking interactions and maintaining long-term relationships.</p>
-                </a>
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

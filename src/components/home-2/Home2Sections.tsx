@@ -12,7 +12,14 @@ import Home2TestimonialsSection from "./sections/Home2TestimonialsSection";
 import Home2FooterSection from "./sections/Home2FooterSection";
 import PricingPlansSection from "../pricing/sections/PricingPlansSection";
 import ContactUs1MessageFormSection from "../contact-us-1/sections/ContactUs1MessageFormSection";
-import { pricingPlansData, testimonialsBottomData, testimonialsTopData } from "@/app/data/data";
+import {
+  expertiseCardsData,
+  leadershipTeamData,
+  leadershipTeamSecondaryData,
+  pricingPlansData,
+  testimonialsBottomData,
+  testimonialsTopData,
+} from "@/app/data/data";
 
 export default function Home2Sections() {
 
@@ -21,10 +28,10 @@ export default function Home2Sections() {
       <Home2BannerSection />
       <Home2HowItWorksIntroSection />
       <Home2HowItWorksCardsSection />
-      <Home2WhyJobboardSection />
+      <Home2WhyJobboardSection cards={expertiseCardsData} />
       <Home2HowItWorksTabsSection />
       <Home2LinesSection />
-      <Home2LeadershipSection />
+      <Home2LeadershipSection leadership={leadershipTeamData} team={leadershipTeamSecondaryData} />
       <PricingPlansSection
         animation="inview"
         plans={pricingPlansData}

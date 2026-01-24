@@ -5,7 +5,7 @@ interface Testimonial {
 
 export default function Home2TestimonialsSection({ testimonialsTop, testimonialsBottom }: { testimonialsTop: Testimonial[], testimonialsBottom: Testimonial[] }) {
   return (
-    <section className="section without-top-spacing">
+    <section id="reviews" className="section without-top-spacing">
       <div className="w-layout-blockcontainer base-container w-container">
         <div className="center-content-wrapper width">
           <h6 data-w-id="86e8301c-f525-2945-b9fd-a4556e115c4c" data-ix-inview className="primary-title ix-fade-up">TESTIMONIALS</h6>

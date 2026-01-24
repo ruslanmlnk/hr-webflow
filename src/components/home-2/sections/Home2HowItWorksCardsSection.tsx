@@ -2,7 +2,7 @@ import { webflowStyles } from "../styles";
 
 export default function Home2HowItWorksCardsSection() {
   return (
-    <section className="how-it-works-section">
+    <section id="advantages" className="how-it-works-section">
       <img src="/testbg.svg " loading="lazy" width="361" alt="background image" className="home-background-image" />
       <div className="w-layout-blockcontainer base-container position w-container">
         <div className="home-2-how-it-works-block-wrap">

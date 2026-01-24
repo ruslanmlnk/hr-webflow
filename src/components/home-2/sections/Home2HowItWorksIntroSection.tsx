@@ -2,7 +2,7 @@ import { webflowStyles } from "../styles";
 
 export default function Home2HowItWorksIntroSection() {
     return (
-        <section className="section how-it-works" style={{ overflow: 'visible' }}>
+        <section id="directions" className="section how-it-works" style={{ overflow: 'visible' }}>
             <div className="w-layout-blockcontainer base-container w-container">
                 <div className="center-how-it-works-wrapper" style={{ overflow: 'visible', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <h6 data-w-id="78b1b3e7-47e2-8506-03d6-8fe5cb6336b3" style={webflowStyles.opacity0} className="primary-title">WHY CHOOSE US</h6>

@@ -4676,7 +4676,11 @@ blockquote {
 
 @media (hover: none) {
   .team-card-content-wrapper {
-    opacity: 1;
+    opacity: 0;
+  }
+
+  .team-card-image {
+    transform: none;
   }
 }
 
@@ -7136,15 +7140,14 @@ blockquote {
 }
 
 .image-bg-wrapper {
-  background-image: url("/images/icon.svg");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: none;
+  background-color: #fff;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 50px;
   display: flex;
+  border-radius: 12px;
 }
 
 .new-way-item-wrapper {
@@ -7164,13 +7167,89 @@ blockquote {
 .new-way-title {
   margin-top: 0;
   margin-bottom: 0;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  transition: color .3s ease;
 }
 
-.new-way-title:hover {
+.new-way-title::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
   background-image: linear-gradient(to bottom, var(--primary), var(--secondary-primary));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  opacity: 0;
+  transition: opacity .3s ease;
+  pointer-events: none;
+}
+
+.new-way-job-link:hover .new-way-title::after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar .w-nav-overlay {
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+  }
+
+  .navbar [data-nav-menu-open] {
+    background: #fff;
+    border-right: 1px solid rgba(104, 87, 246, 0.2);
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 24px 60px rgba(13, 14, 17, 0.2);
+    padding-bottom: 20px;
+  }
+
+  .navbar .nav-menu {
+    background: #fff;
+  }
+
+  .navbar .tablet-menu {
+    border-bottom: 1px solid rgba(104, 87, 246, 0.2);
+  }
+
+  .navbar .menu-wrap {
+    gap: 6px;
+  }
+
+  .navbar .relative-navbar-block {
+    border-bottom: 1px solid rgba(104, 87, 246, 0.12);
+  }
+
+  .navbar .relative-navbar-block:last-child {
+    border-bottom: 0;
+  }
+
+  .navbar .nav-dropdown-toggle {
+    border-radius: 10px;
+    transition: background-color .2s ease, color .2s ease;
+  }
+
+  .navbar .nav-dropdown-toggle:hover {
+    background-color: rgba(104, 87, 246, 0.08);
+  }
+
+  .navbar .nav-item-title {
+    color: var(--primary-dark);
+    font-weight: 500;
+  }
+}
+
+.new-way-title:hover {
+  color: inherit;
+  background-image: none;
+  -webkit-text-fill-color: inherit;
+  -webkit-background-clip: initial;
+  background-clip: border-box;
 }
 
 .dark-section-bg {
@@ -11218,10 +11297,11 @@ html.testimonials-loop-fallback .bottom-testimon-full-width-wrap {
   }
 
   .new-way-title:hover {
-    background-image: linear-gradient(to bottom, var(--primary), var(--secondary-primary));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    color: inherit;
+    background-image: none;
+    -webkit-text-fill-color: inherit;
+    -webkit-background-clip: initial;
+    background-clip: border-box;
   }
 
   .discover-job-tabs-wrap.spacing {
@@ -13825,6 +13905,12 @@ html.testimonials-loop-fallback .bottom-testimon-full-width-wrap {
   .contacts-2-location-wrapper,
   .contacts-2-form-wrapper {
     width: 100%;
+  }
+
+  .contacts-wrapper.contacts-wrapper--form-wide .contacts-form-wrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .contacts-2-content-wrapper {

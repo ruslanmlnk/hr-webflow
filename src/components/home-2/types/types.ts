@@ -9,6 +9,30 @@ export type PricingPlansProps = {
   plans: PricingPlan[];
 };
 
+export type ExpertiseCard = {
+  title: string;
+  description: string;
+  icon: string;
+};
+
+export type Home2WhyJobboardSectionProps = {
+  cards: ExpertiseCard[];
+};
+
+export type TeamMember = {
+  name: string;
+  position: string;
+  image: string;
+  imageAlt?: string;
+  imageClassName?: string;
+  infoCardColor?: string;
+};
+
+export type Home2LeadershipSectionProps = {
+  leadership: TeamMember[];
+  team: TeamMember[];
+};
+
 // types.ts
 export interface Testimonial {
   text: string;

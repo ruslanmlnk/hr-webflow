@@ -31,6 +31,91 @@ export const pricingPlansData = [
   },
 ];
 
+export const expertiseCardsData = [
+  {
+    title: "IT / Tech recruitment",
+    description:
+      "Developers, Analysts, QA, DevOps, Product Managers, Project Managers",
+    icon: "ico-1.svg",
+  },
+  {
+    title: "Product recruitment",
+    description:
+      "Product Managers, Business Analysts, Project Managers, UX/UI Designers",
+    icon: "ico-2.svg",
+  },
+  {
+    title: "Digital Recruitment",
+    description:
+      "Digital Marketers, Performance Specialists, SEO, SMM, Content Managers",
+    icon: "ico-3.svg",
+  },
+  {
+    title: "Mass recruitment",
+    description:
+      "Operators, couriers, sales staff, and frontline employees",
+    icon: "ico-1.svg",
+  },
+    {
+    title: "Executive Search",
+    description:
+      "Confidential search for executives and key specialists",
+    icon: "ico-1.svg",
+  },
+];
+
+export const leadershipTeamData = [
+  {
+    name: "CEO / HR Director",
+    position: "Strategy and agency development",
+    image: "leadership/ico-1.png",
+    infoCardColor: "#FFF9DE",
+  },
+  {
+    name: "Brooklyn Simmons",
+    position: "CEO",
+    image: "leadership/ico-2.png",
+    imageClassName: "center",
+    infoCardColor: "#F5DEFF",
+  },
+  {
+    name: "Jessica Robinson",
+    position: "Office Manager",
+    image: "leadership/ico-3.png",
+    imageClassName: "last",
+    infoCardColor: "#DEE7FF",
+  },
+];
+
+export const leadershipTeamSecondaryData = [
+  {
+    name: "CEO / HR Director",
+    position: "Strategy and agency development",
+    image: "leadership/ico-4.png",
+    infoCardColor: "#DEFFEA",
+  },
+  {
+    name: "CEO / HR Director",
+    position: "Strategy and agency development",
+    image: "leadership/ico-5.png",
+    infoCardColor: "#DEFFFD",
+  },
+  {
+    name: "Brooklyn Simmons",
+    position: "CEO",
+    image: "leadership/ico-6.png",
+    imageClassName: "center",
+    infoCardColor: "rgba(139, 90, 255, 0.2)",
+  },
+  {
+    name: "Jessica Robinson",
+    position: "Office Manager",
+    image: "leadership/ico-7.png",
+    imageClassName: "last",
+    infoCardColor: "rgba(255, 90, 114, 0.2)",
+  },
+];
+
 
 export const testimonialsBottomData = [
   {

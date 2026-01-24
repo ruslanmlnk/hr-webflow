@@ -2,7 +2,7 @@ import { webflowStyles } from "../styles";
 
 export default function Home2LinesSection() {
   return (
-    <section className="section home-2bg-with-lines">
+    <section id="cases" className="section home-2bg-with-lines">
 
       <div className="w-layout-blockcontainer base-container w-container">
         <div className="about-jobboard-wrapper home-2">

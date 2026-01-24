@@ -46,13 +46,13 @@ export default function Home2FooterSection() {
 
           {/* Navigation */}
           <nav className="footer-nav">
-            <a href="#" className="nav-link">Directions</a>
-            <a href="#" className="nav-link">Advantages</a>
-            <a href="#" className="nav-link">Process</a>
-            <a href="#" className="nav-link">Cases</a>
-            <a href="#" className="nav-link">Team</a>
-            <a href="#" className="nav-link">Rates</a>
-            <a href="#" className="nav-link">Reviews</a>
+            <a href="#directions" className="nav-link">Directions</a>
+            <a href="#advantages" className="nav-link">Advantages</a>
+            <a href="#process" className="nav-link">Process</a>
+            <a href="#cases" className="nav-link">Cases</a>
+            <a href="#team" className="nav-link">Team</a>
+            <a href="#rates" className="nav-link">Rates</a>
+            <a href="#reviews" className="nav-link">Reviews</a>
           </nav>
         </div>
 

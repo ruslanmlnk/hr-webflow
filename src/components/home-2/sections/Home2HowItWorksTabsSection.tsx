@@ -2,7 +2,7 @@ import { webflowStyles } from "../styles";
 
 export default function Home2HowItWorksTabsSection() {
   return (
-    <section className="section without-top-spacing">
+    <section id="process" className="section without-top-spacing">
       <div className="w-layout-blockcontainer base-container w-container">
         <div className="how-it-works-wrap">
           <div className="how-it-works-wrapper">

@@ -11,7 +11,7 @@ export default function PricingPlansSection({
   const isInView = animation === "inview";
 
   return (
-    <div className="section">
+    <div id="rates" className="section">
       <div className="base-container w-container">
         <TwoColTitle
           topTitle="Pricing"
