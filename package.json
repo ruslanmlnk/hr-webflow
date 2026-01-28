@@ -15,8 +15,9 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.17",
+    "@fullhuman/postcss-purgecss": "^8.0.0",
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
