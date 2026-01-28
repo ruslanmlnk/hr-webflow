@@ -9,11 +9,11 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
     "next": "16.1.2",
     "nodemailer": "^6.10.1",
     "react": "19.2.3",
-    "react-dom": "19.2.3",
-    "react-scroll": "^1.9.3"
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^8.0.0",
@@ -21,7 +21,6 @@
     "@types/nodemailer": "^6.4.17",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/react-scroll": "^1.8.10",
     "eslint": "^9",
     "eslint-config-next": "16.1.2",
     "typescript": "^5"

@@ -1,37 +1,21 @@
-// components/SmoothScroll.tsx
-'use client';
-
-import { useEffect } from 'react';
-import { animateScroll as scroll } from 'react-scroll';
+"use client";
+import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 
 export default function SmoothScroll() {
   useEffect(() => {
-    // Налаштування глобальних опцій для плавного скролу
-    const options = {
+    const lenis = new Lenis({
+      duration: 1.2,
       smooth: true,
-      duration: 2000,
-    };
+      smoothTouch: false,
+    });
 
-    // Додати плавний скрол до всіх посилань з href="#..."
-    const handleLinkClick = (e: MouseEvent) => {
-      const target = e.target as HTMLAnchorElement;
-      if (target.tagName === 'A' && target.hash) {
-        e.preventDefault();
-        const elementId = target.hash.substring(1);
-        const element = document.getElementById(elementId);
-        
-        if (element) {
-          const offsetTop = element.offsetTop;
-          scroll.scrollTo(offsetTop, options);
-        }
-      }
-    };
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-    document.addEventListener('click', handleLinkClick);
-
-    return () => {
-      document.removeEventListener('click', handleLinkClick);
-    };
+    requestAnimationFrame(raf);
   }, []);
 
   return null;
