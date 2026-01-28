@@ -61,7 +61,7 @@ export default function RootLayout({
       </head>
       
       <body>
-        <SmoothScroll >
+        <SmoothScroll />
         {children}
         
         <Script 
@@ -69,7 +69,6 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         <WebflowScripts />
-        </SmoothScroll>
       </body>
     </html>
   );
