@@ -11,6 +11,10 @@ export default function SmoothScroll() {
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: 'vertical',
       smoothWheel: true,
+      wheelMultiplier: 1,
+      touchMultiplier: 2,
+      infinite: false, // ВАЖЛИВО
+      autoResize: true, // ВАЖЛИВО
     });
 
     function raf(time: number) {
@@ -19,6 +23,11 @@ export default function SmoothScroll() {
     }
 
     requestAnimationFrame(raf);
+
+    // Оновити після завантаження контенту
+    window.addEventListener('load', () => {
+      lenis.resize();
+    });
 
     return () => {
       lenis.destroy();
