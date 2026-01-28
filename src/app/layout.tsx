@@ -61,15 +61,15 @@ export default function RootLayout({
       </head>
       
       <body>
-        <SmoothScroll />
+        <SmoothScroll >
         {children}
         
-        {/* jQuery і Webflow скрипти в кінці */}
         <Script 
           src="/js/jquery.js" 
           strategy="afterInteractive"
         />
         <WebflowScripts />
+        </SmoothScroll>
       </body>
     </html>
   );
