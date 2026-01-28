@@ -77,7 +77,7 @@ export default function ContactUs1MessageForm() {
             maxLength={256}
             name="telegram"
             data-name="Telegram"
-            placeholder="Your Telegram"
+            placeholder="Your Telegram (optional)"
             type="text"
             id="telegram"
           />
@@ -86,7 +86,7 @@ export default function ContactUs1MessageForm() {
             maxLength={256}
             name="whatsapp"
             data-name="WhatsApp"
-            placeholder="Your WhatsApp"
+            placeholder="Your WhatsApp (optional)"
             type="text"
             id="whatsapp"
           />

@@ -31,8 +31,8 @@ export default function ContactUs1FormSection() {
             <div data-w-id="2d795c65-8f28-5364-8057-86ac399da26d" style={webflowStyles.opacity0} className="contacts-detail">
               <div className="contact-us-item-wrapper">
                 <p className="contacts-icon">{"\uf0e0"}</p>
-                <a href="mailto:information@office.com" className="location-link">
-                  information@jobboard.com
+                <a href="mailto:hrloom.agency@gmail.com" className="location-link">
+                  hrloom.agency@gmail.com
                 </a>
               </div>
             </div>

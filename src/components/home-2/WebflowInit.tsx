@@ -14,80 +14,19 @@ export default function WebflowInit() {
     let didScheduleJobboardFallback = false;
     let didScheduleTestimonialsFallback = false;
 
-    const scheduleJobboardFallback = (force = false) => {
-      if (didScheduleJobboardFallback && !force) {
-        return;
-      }
-
+    const scheduleJobboardFallback = () => {
       const target = document.querySelector<HTMLElement>(".jobboard-items-wrapper");
-      if (!target) {
-        return;
+      if (target) {
+        document.documentElement.classList.add("jobboard-loop-fallback");
       }
-
-      didScheduleJobboardFallback = true;
-
-      const prefersReducedMotion = false; // force motion even if reduce motion is set
-      const enableFallback = () => {
-        if (!prefersReducedMotion) {
-          document.documentElement.classList.add("jobboard-loop-fallback");
-        }
-      };
-
-      // Force on immediately to guarantee motion
-      enableFallback();
-
-      const readTransform = () => window.getComputedStyle(target).transform;
-      window.setTimeout(() => {
-        const start = readTransform();
-        window.setTimeout(() => {
-          const current = readTransform();
-          if (start === current) {
-            enableFallback();
-          }
-        }, 1200);
-      }, 1200);
-
-      window.setTimeout(() => {
-        const animationName = window.getComputedStyle(target).animationName;
-        if (animationName === "none") {
-          enableFallback();
-        }
-      }, 3500);
     };
 
-    const scheduleTestimonialsFallback = (force = false) => {
-      if (didScheduleTestimonialsFallback && !force) {
-        return;
-      }
-
+    const scheduleTestimonialsFallback = () => {
       const topTrack = document.querySelector<HTMLElement>(".testimanial-full-width-wrapper");
       const bottomTrack = document.querySelector<HTMLElement>(".bottom-testimon-full-width-wrap");
-      if (!topTrack && !bottomTrack) {
-        return;
+      if (topTrack || bottomTrack) {
+        document.documentElement.classList.add("testimonials-loop-fallback");
       }
-
-      didScheduleTestimonialsFallback = true;
-
-      const readTransform = (element?: HTMLElement | null) =>
-        element ? window.getComputedStyle(element).transform : null;
-
-      // Force on immediately to guarantee motion
-      document.documentElement.classList.add("testimonials-loop-fallback");
-
-      window.setTimeout(() => {
-        const topStart = readTransform(topTrack);
-        const bottomStart = readTransform(bottomTrack);
-        window.setTimeout(() => {
-          const topCurrent = readTransform(topTrack);
-          const bottomCurrent = readTransform(bottomTrack);
-          const topStatic = topTrack && topStart === topCurrent;
-          const bottomStatic = bottomTrack && bottomStart === bottomCurrent;
-
-          if (topStatic || bottomStatic) {
-            document.documentElement.classList.add("testimonials-loop-fallback");
-          }
-        }, 1200);
-      }, 1200);
     };
 
     const initInViewAnimations = () => {
@@ -96,61 +35,19 @@ export default function WebflowInit() {
         return;
       }
 
-      const revealAll = () => {
-        targets.forEach((target) => target.classList.add("ix-visible"));
-      };
-
-      const applyInViewNow = () => {
-        const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-        const viewportTop = viewportHeight * 0.1;
-        const viewportBottom = viewportHeight * 0.9;
-
-        targets.forEach((target) => {
-          const rect = target.getBoundingClientRect();
-          const isInView = rect.bottom >= viewportTop && rect.top <= viewportBottom;
-          if (isInView) {
-            target.classList.add("ix-visible");
-          }
-        });
-      };
-
-      if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
-        targets.forEach((target) => target.classList.add("ix-visible"));
-        return;
-      }
-
-      if (typeof IntersectionObserver === "undefined") {
-        targets.forEach((target) => target.classList.add("ix-visible"));
-        return;
-      }
-
-      applyInViewNow();
-      window.setTimeout(applyInViewNow, 50);
-      window.setTimeout(revealAll, 300);
-
       const observer = new IntersectionObserver(
         (entries, obs) => {
           entries.forEach((entry) => {
-            if (!entry.isIntersecting) {
-              return;
+            if (entry.isIntersecting) {
+              (entry.target as HTMLElement).classList.add("ix-visible");
+              obs.unobserve(entry.target);
             }
-
-            (entry.target as HTMLElement).classList.add("ix-visible");
-            obs.unobserve(entry.target);
           });
         },
-        { threshold: 0.2, rootMargin: "0px 0px -10% 0px" }
+        { threshold: 0.1, rootMargin: "0px 0px -5% 0px" }
       );
 
       targets.forEach((target) => observer.observe(target));
-
-      window.setTimeout(() => {
-        targets.forEach((target) => {
-          if (!target.classList.contains("ix-visible")) {
-            target.classList.add("ix-visible");
-          }
-        });
-      }, 2500);
     };
 
     const nudgeScrollForIx2 = () => {
@@ -187,9 +84,6 @@ export default function WebflowInit() {
         window.setTimeout(fire, 600);
         window.setTimeout(fire, 1200);
         window.setTimeout(fire, 2000);
-        window.setTimeout(nudgeScrollForIx2, 0);
-        window.setTimeout(nudgeScrollForIx2, 200);
-        window.setTimeout(nudgeScrollForIx2, 1200);
       });
     };
 
@@ -205,9 +99,9 @@ export default function WebflowInit() {
 
     safeInitInView();
 
-    const scheduleLoopFallbacks = (force = false) => {
-      scheduleJobboardFallback(force);
-      scheduleTestimonialsFallback(force);
+    const scheduleLoopFallbacks = () => {
+      scheduleJobboardFallback();
+      scheduleTestimonialsFallback();
     };
 
     const refreshInView = () => {
@@ -228,15 +122,15 @@ export default function WebflowInit() {
 
       try {
         wf.destroy?.();
-      } catch {}
+      } catch { }
 
       try {
         wf.ready?.();
-      } catch {}
+      } catch { }
 
       try {
         wf.require("ix2")?.init?.();
-      } catch {}
+      } catch { }
 
       window.dispatchEvent(new Event("resize"));
       nudgeScrollForIx2();
@@ -252,14 +146,14 @@ export default function WebflowInit() {
 
     const handleLoad = () => {
       bootWebflowIx2();
-      scheduleLoopFallbacks(true);
+      scheduleLoopFallbacks();
       refreshInView();
     };
 
     const handlePageShow = () => {
       window.setTimeout(() => {
         bootWebflowIx2();
-        scheduleLoopFallbacks(true);
+        scheduleLoopFallbacks();
         refreshInView();
       }, 50);
     };
@@ -269,7 +163,7 @@ export default function WebflowInit() {
 
     const initWebflow = () => {
       bootWebflowIx2();
-      scheduleLoopFallbacks(true);
+      scheduleLoopFallbacks();
       refreshInView();
     };
 
