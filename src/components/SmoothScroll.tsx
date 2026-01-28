@@ -9,7 +9,7 @@ export default function SmoothScroll() {
     // Налаштування глобальних опцій для плавного скролу
     const options = {
       smooth: true,
-      duration: 800,
+      duration: 2000,
     };
 
     // Додати плавний скрол до всіх посилань з href="#..."
