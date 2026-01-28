@@ -63,29 +63,45 @@ export const expertiseCardsData = [
     icon: "ico-1.svg",
   },
 ];
-
 export const leadershipTeamData = [
   {
-    name: "CEO / HR Director",
-    position: "Strategy and agency development",
+    name: "Digital Recruiter",
+    position: "Marketing, Traffic, Digital",
     image: "leadership/ico-1.png",
     infoCardColor: "#FFF9DE",
   },
   {
-    name: "Brooklyn Simmons",
-    position: "CEO",
+    name: "IT Recruiter",
+    position: "Tech talent",
     image: "leadership/ico-2.png",
-    imageClassName: "center",
     infoCardColor: "#F5DEFF",
   },
   {
-    name: "Jessica Robinson",
-    position: "Office Manager",
+    name: "Product Recruiter",
+    position: "Product, Business roles",
     image: "leadership/ico-3.png",
-    imageClassName: "last",
     infoCardColor: "#DEE7FF",
   },
+  {
+    name: "Sales Manager",
+    position: "Client acquisition, Deals",
+    image: "leadership/ico-4.png",
+    infoCardColor: "#E6FFE8",
+  },
+  {
+    name: "Client Manager",
+    position: "Client support, Communication",
+    image: "leadership/ico-5.png",
+    infoCardColor: "#FFEDEE",
+  },
+  {
+    name: "Operations Manager",
+    position: "Processes, Efficiency, Systems",
+    image: "leadership/ico-6.png",
+    infoCardColor: "#E4F6FF",
+  },
 ];
+
 
 export const leadershipTeamSecondaryData = [
   {

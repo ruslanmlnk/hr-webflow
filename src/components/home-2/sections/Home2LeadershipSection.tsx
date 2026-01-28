@@ -40,7 +40,7 @@ export default function Home2LeadershipSection({ leadership, team }: Home2Leader
           ))}
         </div>
 
-        <div className="w-layout-grid team-grid-large col4">
+        {/* <div className="w-layout-grid team-grid-large col4">
           {team.map((member, index) => (
             <div
               key={`${member.name}-secondary-${index}`}
@@ -60,7 +60,7 @@ export default function Home2LeadershipSection({ leadership, team }: Home2Leader
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
