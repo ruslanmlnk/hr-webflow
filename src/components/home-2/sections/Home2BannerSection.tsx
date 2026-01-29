@@ -27,16 +27,16 @@ export default function Home2BannerSection() {
                 </p>
               </div>
             </form> */}
-            <a href="/job-post" className="primary-button-black w-inline-block">
+            <a href="#contact-form" className="primary-button-black w-inline-block">
               <div className="button-text">Get a consultation</div>
             </a>
           </div>
           <div className="right-elements-wrapper">
             {/* <img src="images/y68778-201.webp" loading="lazy" style={webflowStyles.opacity0} data-w-id="1a3d2dfe-b4da-e4f6-4c52-e589b95690f2" alt="home banner image" className="girl-banner-image" /> */}
             <img src="images/subtract.svg" loading="lazy" style={webflowStyles.opacity0} data-w-id="2e66a02a-4e4a-37b3-79c1-81eb79fca035" alt="background image" className="bg-image" />
-            
-            
-           
+
+
+
             <div data-w-id="f06df3c2-59e4-6b20-51d3-3eb5e0d98e39" style={webflowStyles.opacity0} className="banner-blured-block left">
               <div className="banner-number-text">5,000+</div>
               <p className="small-paragraph">Candidates in the database</p>

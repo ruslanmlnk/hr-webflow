@@ -6,10 +6,20 @@ import SmoothScroll from "../components/SmoothScroll";
 const webflowCurrencySettings = `window.__WEBFLOW_CURRENCY_SETTINGS={"currencyCode":"USD","symbol":"$","decimal":".","fractionDigits":2,"group":",","template":"{{wf {\\"path\\":\\"symbol\\",\\"type\\":\\"PlainText\\"} }} {{wf {\\"path\\":\\"amount\\",\\"type\\":\\"CommercePrice\\"} }} {{wf {\\"path\\":\\"currencyCode\\",\\"type\\":\\"PlainText\\"} }}","hideDecimalForWholeNumbers":false};`;
 
 export const metadata = {
-  title: "Home 2 - JobBoard",
+  title: "HRLoom Agency — Ваш надійний партнер у пошуку талантів",
+  description: "Професійне рекрутингове агентство HRLoom Agency. Допомагаємо бізнесу знаходити найкращих спеціалістів — від масового найму до Executive Search. Знайдіть свій ідеальний кадр з нами.",
+  keywords: ["рекрутинг", "пошук персоналу", "HRLoom Agency", "кадрове агентство", "HR консалтинг", "найм співробітників", "Executive Search"],
   icons: {
-    icon: "/images/favicon.png",
+    icon: "/favicon.svg",
     apple: "/images/app-icon.png",
+  },
+  openGraph: {
+    title: "HRLoom Agency — Рекрутингове агентство",
+    description: "Ефективний пошук персоналу для вашого бізнесу. Ми знайдемо тих, хто допоможе вам зростати.",
+    url: "https://hrloom.agency",
+    siteName: "HRLoom Agency",
+    locale: "uk_UA",
+    type: "website",
   },
 };
 
