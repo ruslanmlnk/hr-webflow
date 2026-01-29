@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://hrloom.agency/sitemap.xml',
+        sitemap: 'https://hrloom.net/sitemap.xml',
     };
 }
