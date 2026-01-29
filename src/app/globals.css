@@ -6308,8 +6308,17 @@ blockquote {
   border-radius: 50px;
   height: auto;
   padding: 1px;
-  transition: background-color .3s, color .3s;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   position: relative;
+}
+
+.primary-button-black:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.primary-button-black:active {
+  transform: translateY(-1px);
 }
 
 .primary-white-button {
