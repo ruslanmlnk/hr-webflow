@@ -10,19 +10,8 @@ export const scrollToContactForm = (e: React.MouseEvent) => {
 
     console.log("Scrolling to contact form...");
 
-
-    // 🔥 ДАЄМО WEBFLOW ЗАКІНЧИТИ АНІМАЦІЇ
-    requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-            const rect = anchor.getBoundingClientRect();
-            const scrollTop = window.scrollY || window.pageYOffset;
-
-            lenis.stop();
-            lenis.scrollTo(scrollTop + rect.top, {
-                duration: 1.1,
-                easing: (t: number) => 1 - Math.pow(1 - t, 3),
-            });
-            lenis.start();
-        });
+    lenis.scrollTo(anchor, {
+        duration: 1.1,
+        easing: (t: number) => 1 - Math.pow(1 - t, 3),
     });
 };

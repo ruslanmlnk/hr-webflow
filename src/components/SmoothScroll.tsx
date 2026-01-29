@@ -14,6 +14,7 @@ export default function SmoothScroll() {
       smoothWheel: true,
       wheelMultiplier: 1,
       touchMultiplier: 2,
+      autoRaf: true, // дуже важливо
     });
 
     (window as any).lenis = lenis;
@@ -22,13 +23,6 @@ export default function SmoothScroll() {
       // Notify Webflow IX2 and other scroll-dependent libraries
       window.dispatchEvent(new Event('scroll'));
     });
-
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
 
     return () => {
       lenis.destroy();
