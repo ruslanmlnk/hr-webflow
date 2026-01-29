@@ -27,12 +27,17 @@ export default function WebflowScripts() {
           onLoad={() => setStep(3)}
         />
       )} */}
-      {/* {step >= 3 && ( */}
       <Script
         src="/js/webflow.schunk.4913f0d9ee368d76.js"
         strategy="afterInteractive"
         onLoad={() => setStep(3)}
       />
+      {/* {step >= 3 && ( */}
+      {/* <Script
+        src="/js/webflow.schunk.4913f0d9ee368d76.js"
+        strategy="afterInteractive"
+        onLoad={() => setStep(3)}
+      /> */}
       <Script
         src="/js/webflow-script-1.js"
         strategy="afterInteractive"
