@@ -24,18 +24,17 @@ export default function ContactUs1MessageFormSection({ animation = "inview" }: P
           )}
           {isInView ? (
             <InView className="contacts-form-wrapper inview-fade-up inview-delay-1">
-              <h3 className="contacts-form-title">Send us a message</h3>
+              <h3 className="contacts-form-title" id="contact-form">Send us a message</h3>
               <ContactUs1MessageForm />
             </InView>
           ) : (
             <div className="contacts-form-wrapper">
-              <h3 className="contacts-form-title">Send us a message</h3>
+              <h3 className="contacts-form-title" id="contact-form">Send us a message</h3>
               <ContactUs1MessageForm />
             </div>
           )}
         </div>
       </div>
-      <div id="contact-form"></div>
     </div>
   );
 }
