@@ -13,6 +13,11 @@ export default function WebflowScripts() {
         strategy="afterInteractive"
         onLoad={() => setStep(1)}
       />
+      <Script
+        src="/js/webflow.schunk.c11452b75fe04dcc.js"
+        strategy="afterInteractive"
+        onLoad={() => setStep(2)}
+      />
       {/* {step >= 1 && (
         <Script
           src="/js/webflow.schunk.c11452b75fe04dcc.js"
@@ -27,11 +32,11 @@ export default function WebflowScripts() {
           onLoad={() => setStep(3)}
         />
       )} */}
-      <Script
+      {/* <Script
         src="/js/webflow.schunk.4913f0d9ee368d76.js"
         strategy="afterInteractive"
         onLoad={() => setStep(3)}
-      />
+      /> */}
       {/* {step >= 3 && ( */}
       {/* <Script
         src="/js/webflow.schunk.4913f0d9ee368d76.js"
