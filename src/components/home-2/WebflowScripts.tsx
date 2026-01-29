@@ -27,15 +27,15 @@ export default function WebflowScripts() {
           onLoad={() => setStep(3)}
         />
       )} */}
-      {step >= 3 && (
-        <Script
-          src="/js/webflow-script-1.js"
-          strategy="afterInteractive"
-          onLoad={() => {
-            window.dispatchEvent(new Event("webflow:scripts-ready"));
-          }}
-        />
-      )}
+      {/* {step >= 3 && ( */}
+      <Script
+        src="/js/webflow-script-1.js"
+        strategy="afterInteractive"
+        onLoad={() => {
+          window.dispatchEvent(new Event("webflow:scripts-ready"));
+        }}
+      />
+      {/* )} */}
     </>
   );
 }
