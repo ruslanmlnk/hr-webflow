@@ -26,7 +26,7 @@ export default function WebflowScripts() {
           strategy="afterInteractive"
           onLoad={() => setStep(3)}
         />
-      )}
+      )} */}
       {step >= 3 && (
         <Script
           src="/js/webflow-script-1.js"
@@ -35,7 +35,7 @@ export default function WebflowScripts() {
             window.dispatchEvent(new Event("webflow:scripts-ready"));
           }}
         />
-      )} */}
+      )}
     </>
   );
 }
