@@ -2,7 +2,7 @@ export const scrollToContactForm = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
 
-    const anchor = document.getElementById("contact-form-anchor");
+    const anchor = document.getElementById("contact-form");
     if (!anchor) return;
 
     const lenis = (window as any).lenis;
