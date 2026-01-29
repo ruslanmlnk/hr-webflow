@@ -13,14 +13,14 @@ export default function WebflowScripts() {
         strategy="afterInteractive"
         onLoad={() => setStep(1)}
       />
-      {step >= 1 && (
+      {/* {step >= 1 && (
         <Script
           src="/js/webflow.schunk.c11452b75fe04dcc.js"
           strategy="afterInteractive"
           onLoad={() => setStep(2)}
         />
-      )}
-      {step >= 2 && (
+      )} */}
+      {/* {step >= 2 && (
         <Script
           src="/js/webflow.schunk.4913f0d9ee368d76.js"
           strategy="afterInteractive"
@@ -35,7 +35,7 @@ export default function WebflowScripts() {
             window.dispatchEvent(new Event("webflow:scripts-ready"));
           }}
         />
-      )}
+      )} */}
     </>
   );
 }
