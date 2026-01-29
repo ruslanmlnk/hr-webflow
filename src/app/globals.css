@@ -15725,6 +15725,9 @@ html.testimonials-loop-fallback .bottom-testimon-full-width-wrap {
 }
 
 @media screen and (max-width: 991px) {
+  #whatsapp{
+    scroll-margin-top: 200px;
+  }
   .process-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px 20px;
