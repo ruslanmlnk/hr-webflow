@@ -73,14 +73,14 @@ export default function Navbar() {
                 <div className="hover-line"></div>
               </div>
               <div className="search-shop-con tablet">
-                <a href="#contact-form" className="link-block w-inline-block">
+                <a href="#whatsapp" className="link-block w-inline-block">
                   <div className="button-text">Job post</div>
                 </a>
               </div>
             </div>
           </nav>
           <div className="search-shop-con">
-            <a href="#contact-form" className="primary-button-black w-inline-block">
+            <a href="#whatsapp" className="primary-button-black w-inline-block">
               <div className="button-text">Job post</div>
             </a>
           </div>
