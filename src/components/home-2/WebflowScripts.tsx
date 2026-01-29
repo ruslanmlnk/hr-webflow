@@ -13,44 +13,29 @@ export default function WebflowScripts() {
         strategy="afterInteractive"
         onLoad={() => setStep(1)}
       />
-      <Script
-        src="/js/webflow.schunk.c11452b75fe04dcc.js"
-        strategy="afterInteractive"
-        onLoad={() => setStep(2)}
-      />
-      {/* {step >= 1 && (
+      {step >= 1 && (
         <Script
           src="/js/webflow.schunk.c11452b75fe04dcc.js"
           strategy="afterInteractive"
           onLoad={() => setStep(2)}
         />
-      )} */}
-      {/* {step >= 2 && (
+      )}
+      {step >= 2 && (
         <Script
           src="/js/webflow.schunk.4913f0d9ee368d76.js"
           strategy="afterInteractive"
           onLoad={() => setStep(3)}
         />
-      )} */}
-      {/* <Script
-        src="/js/webflow.schunk.4913f0d9ee368d76.js"
-        strategy="afterInteractive"
-        onLoad={() => setStep(3)}
-      /> */}
-      {/* {step >= 3 && ( */}
-      {/* <Script
-        src="/js/webflow.schunk.4913f0d9ee368d76.js"
-        strategy="afterInteractive"
-        onLoad={() => setStep(3)}
-      /> */}
-      <Script
-        src="/js/webflow-script-1.js"
-        strategy="afterInteractive"
-        onLoad={() => {
-          window.dispatchEvent(new Event("webflow:scripts-ready"));
-        }}
-      />
-      {/* )} */}
+      )}
+      {step >= 3 && (
+        <Script
+          src="/js/webflow-script-1.js"
+          strategy="afterInteractive"
+          onLoad={() => {
+            window.dispatchEvent(new Event("webflow:scripts-ready"));
+          }}
+        />
+      )}
     </>
   );
 }
