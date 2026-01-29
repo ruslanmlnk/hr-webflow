@@ -8,6 +8,9 @@ export const scrollToContactForm = (e: React.MouseEvent) => {
     const lenis = (window as any).lenis;
     if (!lenis) return;
 
+    console.log("Scrolling to contact form...");
+
+
     // 🔥 ДАЄМО WEBFLOW ЗАКІНЧИТИ АНІМАЦІЇ
     requestAnimationFrame(() => {
         requestAnimationFrame(() => {
