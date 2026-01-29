@@ -11,7 +11,7 @@ export const metadata = {
   keywords: ["рекрутинг", "пошук персоналу", "HRLoom Agency", "кадрове агентство", "HR консалтинг", "найм співробітників", "Executive Search"],
   icons: {
     icon: "/favicon.svg",
-    apple: "/images/app-icon.png",
+    apple: "/favicon.svg",
   },
   openGraph: {
     title: "HRLoom Agency — Рекрутингове агентство",
