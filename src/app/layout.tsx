@@ -9,6 +9,10 @@ export const metadata = {
   title: "HRLoom Agency — Ваш надійний партнер у пошуку талантів",
   description: "Професійне рекрутингове агентство HRLoom Agency. Допомагаємо бізнесу знаходити найкращих спеціалістів — від масового найму до Executive Search. Знайдіть свій ідеальний кадр з нами.",
   keywords: ["рекрутинг", "пошук персоналу", "HRLoom Agency", "кадрове агентство", "HR консалтинг", "найм співробітників", "Executive Search"],
+  icons: {
+    icon: "/favicon.ico?v=2",
+    apple: "/apple-touch-icon.png?v=2",
+  },
   openGraph: {
     title: "HRLoom Agency — Рекрутингове агентство",
     description: "Ефективний пошук персоналу для вашого бізнесу. Ми знайдемо тих, хто допоможе вам зростати.",
