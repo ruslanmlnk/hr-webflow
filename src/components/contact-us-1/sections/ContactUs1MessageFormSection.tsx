@@ -23,12 +23,12 @@ export default function ContactUs1MessageFormSection({ animation = "inview" }: P
             </div>
           )}
           {isInView ? (
-            <InView className="contacts-form-wrapper inview-fade-up inview-delay-1">
+            <InView id="contact-form" className="contacts-form-wrapper inview-fade-up inview-delay-1">
               <h3 className="contacts-form-title">Send us a message</h3>
               <ContactUs1MessageForm />
             </InView>
           ) : (
-            <div className="contacts-form-wrapper">
+            <div id="contact-form" className="contacts-form-wrapper">
               <h3 className="contacts-form-title">Send us a message</h3>
               <ContactUs1MessageForm />
             </div>
