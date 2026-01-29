@@ -71,7 +71,7 @@ export default function WebflowInit() {
 
     const forceInViewUpdate = () => {
       const fire = () => {
-        window.dispatchEvent(new Event("scroll"));
+        // window.dispatchEvent(new Event("scroll"));
         window.dispatchEvent(new Event("resize"));
         document.dispatchEvent(new Event("scroll"));
         document.dispatchEvent(new Event("resize"));
