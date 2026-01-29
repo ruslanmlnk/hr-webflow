@@ -1,3 +1,7 @@
+"use client";
+
+import { scrollToContactForm } from "@/utils/scroll";
+
 export default function Navbar() {
   return (
     <div data-animation="over-left" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" className="navbar w-nav">
@@ -73,14 +77,14 @@ export default function Navbar() {
                 <div className="hover-line"></div>
               </div>
               <div className="search-shop-con tablet">
-                <a href="#contact-form" className="link-block w-inline-block">
+                <a href="#contact-form" onClick={scrollToContactForm} className="link-block w-inline-block">
                   <div className="button-text">Job post</div>
                 </a>
               </div>
             </div>
           </nav>
           <div className="search-shop-con">
-            <a href="#contact-form" className="primary-button-black w-inline-block">
+            <a href="#contact-form" onClick={scrollToContactForm} className="primary-button-black w-inline-block">
               <div className="button-text">Job post</div>
             </a>
           </div>

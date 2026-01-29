@@ -1,4 +1,7 @@
+"use client";
+
 import { webflowStyles } from "../styles";
+import { scrollToContactForm } from "@/utils/scroll";
 
 export default function Home2BannerSection() {
   return (
@@ -27,7 +30,7 @@ export default function Home2BannerSection() {
                 </p>
               </div>
             </form> */}
-            <a href="#contact-form" className="primary-button-black w-inline-block">
+            <a href="#contact-form" onClick={scrollToContactForm} className="primary-button-black w-inline-block">
               <div className="button-text">Get a consultation</div>
             </a>
           </div>

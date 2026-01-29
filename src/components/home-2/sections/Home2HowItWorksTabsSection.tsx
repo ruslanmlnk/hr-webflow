@@ -1,4 +1,7 @@
+"use client";
+
 import { webflowStyles } from "../styles";
+import { scrollToContactForm } from "@/utils/scroll";
 
 export default function Home2HowItWorksTabsSection() {
   return (
@@ -10,7 +13,7 @@ export default function Home2HowItWorksTabsSection() {
             <h3 data-w-id="bf0ddcf4-6a19-22f5-40ac-b3f3f7d1664d" style={webflowStyles.opacity0} className="medium-title">Work <span className="primary-span">process</span></h3>
             <p data-w-id="bf0ddcf4-6a19-22f5-40ac-b3f3f7d1664f" style={webflowStyles.opacity0} className="short-paragraph">A clear and efficient path to top talent</p>
           </div>
-          <a href="#contact-form" className="primary-button-black w-inline-block">
+          <a href="#contact-form" onClick={scrollToContactForm} className="primary-button-black w-inline-block">
             <div className="button-text">Get a consultation</div>
           </a>
         </div>

@@ -16,6 +16,8 @@ export default function SmoothScroll() {
       touchMultiplier: 2,
     });
 
+    (window as any).lenis = lenis;
+
     lenis.on('scroll', () => {
       // Notify Webflow IX2 and other scroll-dependent libraries
       window.dispatchEvent(new Event('scroll'));
@@ -30,6 +32,7 @@ export default function SmoothScroll() {
 
     return () => {
       lenis.destroy();
+      (window as any).lenis = null;
     };
   }, []);
 
