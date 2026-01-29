@@ -36,7 +36,8 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com" rel="preconnect" crossOrigin="anonymous" />
         <link href="https://fonts.gstatic.com" rel="preconnect" crossOrigin="anonymous" />
         <link href="https://ajax.googleapis.com" rel="dns-prefetch" />
-        <link rel="icon" href="/icon.png?v=2"></link>
+        <link rel="apple-touch-icon" href="/apple-icon.png?v=2" />
+        <link rel="icon" href="/icon.png?v=2" />
         <link
           href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Inter:wght@400;500;600&display=swap"
           rel="stylesheet"
