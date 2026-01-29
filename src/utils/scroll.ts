@@ -8,10 +8,16 @@ export const scrollToContactForm = (e: React.MouseEvent) => {
   const lenis = (window as any).lenis;
   if (!lenis) return;
 
-  console.log("Scrolling to contact form...");
+  console.log("Scrolling to bottom of contact form...");
 
-  // Використовуємо offsetTop відносно документа
-  const targetPosition = anchor.offsetTop;
+  // Висота елемента
+  const elementHeight = anchor.offsetHeight;
+
+  // Позиція верху елемента відносно документа
+  const elementTop = anchor.offsetTop;
+
+  // Цільова позиція — низ елемента
+  const targetPosition = elementTop + elementHeight;
 
   lenis.scrollTo(targetPosition, {
     duration: 1.2,
