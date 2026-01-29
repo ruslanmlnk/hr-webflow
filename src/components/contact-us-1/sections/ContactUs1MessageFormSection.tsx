@@ -22,7 +22,7 @@ export default function ContactUs1MessageFormSection({ animation = "inview" }: P
               <ContactUs1SocialCards />
             </div>
           )}
-          <div id="contact-form" className="contacts-form-wrapper">
+          <div className="contacts-form-wrapper">
             {isInView ? (
               <InView className="inview-fade-up inview-delay-1">
                 <h3 className="contacts-form-title">Send us a message</h3>
