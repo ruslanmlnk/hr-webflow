@@ -19,8 +19,3 @@ export const scrollToContactForm = (e: React.MouseEvent) => {
     easing: (t: number) => 1 - Math.pow(1 - t, 3),
   });
 };
-(window as any).Webflow ||= [];
-(window as any).Webflow.push(() => {
-  const jq = (window as any).jQuery ?? (window as any).$;
-  jq?.('a[href*="#"]').off('click.wf-smoothscroll');
-});
