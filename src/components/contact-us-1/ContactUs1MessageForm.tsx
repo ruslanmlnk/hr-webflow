@@ -72,7 +72,7 @@ export default function ContactUs1MessageForm() {
             id="name"
             required
           />
-          <div className="contacts-input-row" id="contact-form">
+          <div className="contacts-input-row" >
             <input
               className="contacts-input w-input"
               maxLength={256}
