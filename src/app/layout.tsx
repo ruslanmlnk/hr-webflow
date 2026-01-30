@@ -54,7 +54,7 @@ export default function RootLayout({
       </head>
 
       <body>
-        <SmoothScroll />
+        {/* <SmoothScroll /> */}
         {children}
 
         <Script
