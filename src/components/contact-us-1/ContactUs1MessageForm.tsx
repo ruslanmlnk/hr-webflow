@@ -58,8 +58,8 @@ export default function ContactUs1MessageForm() {
           data-name="Email Form"
           method="post"
           className="form-contacts center"
-          data-wf-page-id="64943f2a36915879aa1daecb"
-          data-wf-element-id="ea41af14-8b87-8ae8-ae5d-f8373dc8aafa"
+          // data-wf-page-id="64943f2a36915879aa1daecb"
+          // data-wf-element-id="ea41af14-8b87-8ae8-ae5d-f8373dc8aafa"
           onSubmitCapture={handleSubmit}
         >
           <input
@@ -107,6 +107,7 @@ export default function ContactUs1MessageForm() {
             className="primary-button full-width-mobile w-button"
             value={isSubmitting ? "Sending..." : "Submit"}
             disabled={isSubmitting}
+            id="contact-form"
           />
         </form>
         <div
@@ -126,7 +127,7 @@ export default function ContactUs1MessageForm() {
           </div>
         </div>
       </div>
-      <div id="contact-form" style={{ height: "1px" }}></div>
+      {/* <div id="contact-form" style={{ height: "1px" }}></div> */}
     </>
   );
 }
