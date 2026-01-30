@@ -37,7 +37,7 @@ export default function Home2Sections() {
         plans={pricingPlansData}
       />
 
-      {/* <Home2TestimonialsSection testimonialsBottom={testimonialsBottomData} testimonialsTop={testimonialsTopData} /> */}
+      <Home2TestimonialsSection testimonialsBottom={testimonialsBottomData} testimonialsTop={testimonialsTopData} />
       <ContactUs1MessageFormSection animation="inview" />
       <Home2FooterSection />
     </div>
