@@ -19,18 +19,8 @@ export const scrollToContactForm = (e: React.MouseEvent) => {
     easing: (t: number) => 1 - Math.pow(1 - t, 3),
   });
 };
-window.Webflow ||= [];
-window.Webflow.push(() => {
-  // прибирає webflow smoothscroll на якорях
-  window.jQuery?.('a[href*="#"]').off('click.wf-smoothscroll');
+(window as any).Webflow ||= [];
+(window as any).Webflow.push(() => {
+  const jq = (window as any).jQuery ?? (window as any).$;
+  jq?.('a[href*="#"]').off('click.wf-smoothscroll');
 });
-export { };
-
-declare global {
-  interface Window {
-    Webflow?: Array<(arg?: unknown) => void>;
-    jQuery?: (selector: string) => { off: (events?: string) => void };
-    $?: (selector: string) => { off: (events?: string) => void };
-    lenis?: unknown;
-  }
-}
