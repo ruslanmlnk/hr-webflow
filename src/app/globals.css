@@ -4982,6 +4982,7 @@ blockquote {
   border-radius: 20px;
   width: 50%;
   padding: 30px;
+  position: relative;
 }
 
 .contacts-form-wrapper .contacts-input,
@@ -5009,6 +5010,7 @@ blockquote {
 .contacts-form-wrapper .primary-button {
   width: 100%;
 }
+
 
 .contacts-input-row {
   grid-column-gap: 20px;
@@ -7020,6 +7022,8 @@ blockquote {
   top: 22%;
   left: 0%;
   right: 0%;
+  height: 340px;
+  overflow: hidden;
 }
 
 .jobs-parapgraph {
@@ -7678,6 +7682,14 @@ blockquote {
   min-height: 499px;
   padding: 20px;
   position: relative;
+  overflow: hidden;
+}
+
+.home-2-jobs-collection-track {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  will-change: transform;
 }
 
 .home-2-jobs-collection-wrap {
@@ -7689,6 +7701,7 @@ blockquote {
   max-height: 340px;
   display: flex;
   overflow: hidden;
+  flex: 0 0 auto;
 }
 
 .home-2-banner-content-wrapper {
@@ -8346,6 +8359,8 @@ blockquote {
   grid-column-gap: 30px;
   align-items: flex-start;
   display: flex;
+  touch-action: pan-y;
+  pointer-events: none;
 }
 
 .testimonials-text {
@@ -8367,6 +8382,7 @@ blockquote {
   width: 370px;
   min-height: 435px;
   padding: 30px;
+  pointer-events: auto;
 }
 
 .testimon-wrapper.bg-color {
@@ -8382,6 +8398,7 @@ blockquote {
   display: flex;
   position: relative;
   overflow: hidden;
+  touch-action: pan-y;
 }
 
 .bottom-testimon-full-width-wrap {
@@ -8389,12 +8406,15 @@ blockquote {
   justify-content: flex-end;
   align-items: flex-start;
   display: flex;
+  touch-action: pan-y;
+  pointer-events: none;
 }
 
 .top-testimon-wrapper,
 .bottom-testimonial {
   grid-column-gap: 30px;
   display: flex;
+  touch-action: pan-y;
 }
 
 .hover-link {
@@ -8417,6 +8437,7 @@ blockquote {
   width: auto;
   display: flex;
   overflow: hidden;
+  touch-action: pan-y;
 }
 
 .new-way-job-link {
@@ -8461,16 +8482,97 @@ html.jobboard-loop-fallback .jobboard-items-wrapper {
   }
 }
 
-.ix-fade-up {
+@keyframes home2-jobs-horizontal-top {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(1920px, 0, 0);
+  }
+}
+
+@keyframes home2-jobs-horizontal-bottom {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-1920px, 0, 0);
+  }
+}
+
+html.jobs-loop-fallback .top-jobs-wrapper {
+  animation: home2-jobs-horizontal-top 30s linear infinite;
+  will-change: transform;
+}
+
+html.jobs-loop-fallback .bottom-jobs-wrapper {
+  animation: home2-jobs-horizontal-bottom 30s linear infinite;
+  will-change: transform;
+}
+
+@keyframes home2-jobs-vertical-loop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, calc(-1 * var(--jobs-loop-distance, 360px)), 0);
+  }
+}
+
+html.jobs-vertical-loop-fallback .home-2-jobs-collection-track {
+  animation: home2-jobs-vertical-loop var(--jobs-loop-duration, 10s) linear infinite;
+  will-change: transform;
+}
+
+.ix-fade-up,
+.ix-slide-in-bottom {
   opacity: 0;
-  transform: translate3d(0, 30px, 0);
-  transition: opacity .6s ease, transform .6s ease;
+  transform: translate3d(0, 100px, 0);
+  transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   will-change: opacity, transform;
 }
 
-.ix-fade-up.ix-visible {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
+.ix-fade-in {
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: opacity;
+}
+
+.ix-grow-in {
+  opacity: 0;
+  transform: scale(0.75);
+  transform-origin: center;
+  transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: opacity, transform;
+}
+
+.ix-visible.ix-fade-up,
+.ix-visible.ix-slide-in-bottom {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.ix-visible.ix-fade-in {
+  opacity: 1 !important;
+}
+
+.ix-visible.ix-grow-in {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ix-fade-up,
+  .ix-slide-in-bottom,
+  .ix-fade-in,
+  .ix-grow-in {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 .ix-delay-1 {
@@ -8483,6 +8585,26 @@ html.jobboard-loop-fallback .jobboard-items-wrapper {
 
 .ix-delay-3 {
   transition-delay: .3s;
+}
+
+.ix-delay-4 {
+  transition-delay: .4s;
+}
+
+.ix-delay-5 {
+  transition-delay: .5s;
+}
+
+.ix-delay-6 {
+  transition-delay: .6s;
+}
+
+.ix-delay-7 {
+  transition-delay: .7s;
+}
+
+.ix-delay-8 {
+  transition-delay: .8s;
 }
 
 @keyframes home3-testimonials-top {
@@ -14528,6 +14650,7 @@ html.testimonials-loop-fallback .bottom-testimon-full-width-wrap {
     margin-top: 40px;
   }
 
+
   .about-us-banner-images-wrap {
     grid-row-gap: 20px;
     flex-wrap: wrap;
@@ -15505,7 +15628,8 @@ html.testimonials-loop-fallback .bottom-testimon-full-width-wrap {
   .top-testimon-wrapper,
   .bottom-testimonial,
   .why-job-board-home-2 {
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 
   .about-banner-image {
@@ -16119,12 +16243,19 @@ html.testimonials-loop-fallback .bottom-testimon-full-width-wrap {
   }
 }
 
-/* #contact-form {
-  scroll-margin-top: 30vh;
-} */
+#contact-form {
+  scroll-margin-top: clamp(96px, 22vh, 220px);
+}
+
+.contact-form-section {
+  padding-bottom: clamp(140px, 24vh, 320px);
+}
 
 
 html,
 body {
-  scroll-behavior: auto !important;
+  scroll-behavior: smooth !important;
+  overscroll-behavior-y: auto;
+  touch-action: pan-y;
+  overflow-y: auto !important;
 }

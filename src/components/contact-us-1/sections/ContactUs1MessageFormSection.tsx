@@ -10,19 +10,18 @@ export default function ContactUs1MessageFormSection({ animation = "inview" }: P
   const isInView = animation === "inview";
 
   return (
-    <div className="section without-top-spacing" >
+    <div className="section without-top-spacing contact-form-section" >
       <div className="base-container w-container">
         <div className="contacts-wrapper contacts-wrapper--top contacts-wrapper--form-wide contacts-wrapper--side-stretch">
          
             <div className="contacts-content-wrapper">
               <ContactUs1SocialCards />
             </div>
-          <div className="contacts-form-wrapper" id="contact-form">
-            
-              <div>
-                <h3 className="contacts-form-title">Send us a message</h3>
-                <ContactUs1MessageForm />
-              </div>
+          <div id="contact-form" className="contacts-form-wrapper">
+            <div>
+              <h3 className="contacts-form-title">Send us a message</h3>
+              <ContactUs1MessageForm />
+            </div>
           </div>
         </div>
       </div>

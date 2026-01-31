@@ -1,8 +1,6 @@
 "use client";
 
 import { webflowStyles } from "../styles";
-import { scrollToContactForm } from "@/utils/scroll";
-
 export default function Home2HowItWorksTabsSection() {
   return (
     <section id="process" className="section without-top-spacing">

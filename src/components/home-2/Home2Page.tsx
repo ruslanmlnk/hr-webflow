@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import Home2Sections from "./Home2Sections";
 import ApplyPopup from "./ApplyPopup";
 import WebflowInit from "./WebflowInit";
+import AnchorScroll from "../AnchorScroll";
 
 export default function Home2Page() {
   return (
@@ -10,6 +11,7 @@ export default function Home2Page() {
       <Home2Sections />
       <ApplyPopup />
       <WebflowInit />
+      <AnchorScroll />
     </>
   );
 }

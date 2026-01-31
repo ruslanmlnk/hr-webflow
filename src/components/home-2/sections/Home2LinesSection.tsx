@@ -1,6 +1,35 @@
 import { webflowStyles } from "../styles";
 
 export default function Home2LinesSection() {
+  const cases = [
+    { title: "Affiliate Manager", details: "Contacts: 23 \u00a0 Interviews: 8 \u00a0 Completion time: 2.5 weeks" },
+    { title: "Media Buyer", details: "Contacts: 32 \u00a0 Interviews: 16 \u00a0 Completion time: 3 weeks" },
+    { title: "SMM Manager", details: "Contacts: 30 \u00a0 Interviews: 4 \u00a0 Completion time: 2-3 weeks" },
+    { title: "Head of Sales", details: "Contacts: 9 \u00a0 Interviews: 5 \u00a0 Completion time: 4-5 weeks" },
+    { title: "Product Manager", details: "Contacts: 41 \u00a0 Interviews: 8 \u00a0 Completion time: 4-5 weeks" },
+    { title: "Business Analyst", details: "Contacts: 40 \u00a0 Interviews: 12 \u00a0 Completion time: 3-4 weeks" },
+    { title: "UX/UI Designer", details: "Contacts: 20 \u00a0 Interviews: 6 \u00a0 Completion time: 3-4 weeks" },
+    { title: "Finance Manager", details: "Contacts: 18 \u00a0 Interviews: 2 \u00a0 Completion time: 3-4 weeks" },
+    { title: "Senior Backend Developer", details: "Contacts: 41 \u00a0 Interviews: 8 \u00a0 Completion time: 4-5 weeks" },
+    { title: "Full-Stack Developer", details: "Contacts: 40 \u00a0 Interviews: 6 \u00a0 Completion time: 3-4 weeks" },
+    { title: "DevOps Engineer", details: "Contacts: 55 \u00a0 Interviews: 6 \u00a0 Completion time: 4-5 weeks" },
+    { title: "System Administrator", details: "Contacts: 32 \u00a0 Interviews: 4 \u00a0 Completion time: 2 weeks" },
+  ];
+
+  const renderCaseItems = (suffix = "") =>
+    cases.map((item) => (
+      <div key={`${item.title}${suffix}`} role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
+        <div className="about-positon-wrapper height">
+          <div className="position-wrap">
+            <h5 className="jobs-title">{item.title}</h5>
+            <div className="location-type-wrapper wrap">
+              <p className="jobs-parapgraph">{item.details}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    ));
+
   return (
     <section id="cases" className="section home-2bg-with-lines">
 
@@ -23,126 +52,12 @@ export default function Home2LinesSection() {
               {/* <a href="/jobs-listing" className="link">All Jobs</a> */}
             </div>
             <div className="jobs-list-wrapper home-2 w-dyn-list">
-              <div data-w-id="d5f52c81-4508-3818-4bbc-342ae3af498e" role="list" className="home-2-jobs-collection-wrap w-dyn-items">
-                <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
-                  <div className="about-positon-wrapper height">
-                    <div className="position-wrap">
-                      <h5 className="jobs-title">Affiliate Manager</h5>
-                      <div className="location-type-wrapper wrap">
-                        <p className="jobs-parapgraph">Contacts: 23 &nbsp; Interviews: 8 &nbsp; Completion time: 2.5 weeks</p>
-                      </div>
-                    </div>
-                  </div>
+              <div data-w-id="d5f52c81-4508-3818-4bbc-342ae3af498e" style={webflowStyles.opacity0} className="home-2-jobs-collection-track">
+                <div role="list" className="home-2-jobs-collection-wrap w-dyn-items">
+                  {renderCaseItems()}
                 </div>
-                <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
-                  <div className="about-positon-wrapper height">
-                    <div className="position-wrap">
-                      <h5 className="jobs-title">Media Buyer</h5>
-                      <div className="location-type-wrapper wrap">
-                        <p className="jobs-parapgraph">Contacts: 32 &nbsp; Interviews: 16 &nbsp; Completion time: 3 weeks</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
-                  <div className="about-positon-wrapper height">
-                    <div className="position-wrap">
-                      <h5 className="jobs-title">SMM Manager</h5>
-                      <div className="location-type-wrapper wrap">
-                        <p className="jobs-parapgraph">Contacts: 30 &nbsp; Interviews: 4 &nbsp; Completion time: 2-3 weeks</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
-                  <div className="about-positon-wrapper height">
-                    <div className="position-wrap">
-                      <h5 className="jobs-title">Head of Sales</h5>
-                      <div className="location-type-wrapper wrap">
-                        <p className="jobs-parapgraph">Contacts: 9 &nbsp; Interviews: 5 &nbsp; Completion time: 4-5 weeks</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
-                  <div className="about-positon-wrapper height">
-                    <div className="position-wrap">
-                      <h5 className="jobs-title">Product Manager</h5>
-                      <div className="location-type-wrapper wrap">
-                        <p className="jobs-parapgraph">Contacts: 41 &nbsp; Interviews: 8 &nbsp; Completion time: 4-5 weeks</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
-                  <div className="about-positon-wrapper height">
-                    <div className="position-wrap">
-                      <h5 className="jobs-title">Business Analyst</h5>
-                      <div className="location-type-wrapper wrap">
-                        <p className="jobs-parapgraph">Contacts: 40 &nbsp; Interviews: 12 &nbsp; Completion time: 3-4 weeks</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
-                  <div className="about-positon-wrapper height">
-                    <div className="position-wrap">
-                      <h5 className="jobs-title">UX/UI Designer</h5>
-                      <div className="location-type-wrapper wrap">
-                        <p className="jobs-parapgraph">Contacts: 20 &nbsp; Interviews: 6 &nbsp; Completion time: 3-4 weeks</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
-                  <div className="about-positon-wrapper height">
-                    <div className="position-wrap">
-                      <h5 className="jobs-title">Finance Manager</h5>
-                      <div className="location-type-wrapper wrap">
-                        <p className="jobs-parapgraph">Contacts: 18 &nbsp; Interviews: 2 &nbsp; Completion time: 3-4 weeks</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
-                  <div className="about-positon-wrapper height">
-                    <div className="position-wrap">
-                      <h5 className="jobs-title">Senior Backend Developer</h5>
-                      <div className="location-type-wrapper wrap">
-                        <p className="jobs-parapgraph">Contacts: 41 &nbsp; Interviews: 8 &nbsp; Completion time: 4-5 weeks</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
-                  <div className="about-positon-wrapper height">
-                    <div className="position-wrap">
-                      <h5 className="jobs-title">Full-Stack Developer</h5>
-                      <div className="location-type-wrapper wrap">
-                        <p className="jobs-parapgraph">Contacts: 40 &nbsp; Interviews: 6 &nbsp; Completion time: 3-4 weeks</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
-                  <div className="about-positon-wrapper height">
-                    <div className="position-wrap">
-                      <h5 className="jobs-title">DevOps Engineer</h5>
-                      <div className="location-type-wrapper wrap">
-                        <p className="jobs-parapgraph">Contacts: 55 &nbsp; Interviews: 6 &nbsp; Completion time: 4-5 weeks</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div role="listitem" className="right-jobs-collection-wrapper width w-dyn-item">
-                  <div className="about-positon-wrapper height">
-                    <div className="position-wrap">
-                      <h5 className="jobs-title">System Administrator</h5>
-                      <div className="location-type-wrapper wrap">
-                        <p className="jobs-parapgraph">Contacts: 32 &nbsp; Interviews: 4 &nbsp; Completion time: 2 weeks</p>
-                      </div>
-                    </div>
-                  </div>
+                <div aria-hidden="true" className="home-2-jobs-collection-wrap w-dyn-items">
+                  {renderCaseItems("-dup")}
                 </div>
               </div>
             </div>

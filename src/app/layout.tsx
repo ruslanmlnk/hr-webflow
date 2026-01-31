@@ -1,9 +1,4 @@
-import Script from "next/script";
 import "./globals.css";
-import WebflowScripts from "../components/home-2/WebflowScripts";
-import SmoothScroll from "../components/SmoothScroll";
-
-const webflowCurrencySettings = `window.__WEBFLOW_CURRENCY_SETTINGS={"currencyCode":"USD","symbol":"$","decimal":".","fractionDigits":2,"group":",","template":"{{wf {\\"path\\":\\"symbol\\",\\"type\\":\\"PlainText\\"} }} {{wf {\\"path\\":\\"amount\\",\\"type\\":\\"CommercePrice\\"} }} {{wf {\\"path\\":\\"currencyCode\\",\\"type\\":\\"PlainText\\"} }}","hideDecimalForWholeNumbers":false};`;
 
 export const metadata = {
   title: "HRLoom Agency — Ваш надійний партнер у пошуку талантів",
@@ -46,22 +41,10 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Inter:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
-
-        {/* Webflow скрипти - оптимізовано */}
-        <Script id="webflow-currency" strategy="afterInteractive">
-          {webflowCurrencySettings}
-        </Script>
       </head>
 
       <body>
-        {/* <SmoothScroll /> */}
         {children}
-
-        <Script
-          src="/js/jquery.js"
-          strategy="afterInteractive"
-        />
-        <WebflowScripts />
       </body>
     </html>
   );

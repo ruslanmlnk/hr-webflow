@@ -1,8 +1,23 @@
 "use client";
 
-import { scrollToContactForm } from "@/utils/scroll";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const onResize = () => {
+      if (window.innerWidth > 991 && isOpen) {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, [isOpen]);
+
+  const closeMenu = () => setIsOpen(false);
+  const toggleMenu = () => setIsOpen((prev) => !prev);
+
   return (
     <div data-animation="over-left" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" className="navbar w-nav">
       <div className="nav-container w-container">
@@ -10,12 +25,24 @@ export default function Navbar() {
           <a href="/home-1" className="brand w-nav-brand">
             <img src="/logo.svg" loading="lazy" alt="logo" height="74" className="navbar-logo" />
           </a>
-          <nav role="navigation" className="nav-menu w-nav-menu">
+          <nav
+            id="main-nav"
+            role="navigation"
+            className="nav-menu w-nav-menu"
+            data-nav-menu-open={isOpen ? "" : undefined}
+            onClick={(event) => {
+              if (!isOpen) return;
+              const target = event.target as HTMLElement | null;
+              if (target?.closest("a")) {
+                closeMenu();
+              }
+            }}
+          >
             <div className="tablet-menu">
               <a href="/home-1" className="brand-tablet w-nav-brand">
                 <img src="/logo.svg" loading="lazy" alt="logo" height="30" className="navbar-logo" />
               </a>
-              <div className="close-menu-button w-nav-button">
+              <div className={`close-menu-button w-nav-button${isOpen ? " w--open" : ""}`} onClick={closeMenu} role="button" aria-label="Close menu" aria-expanded={isOpen}>
                 <img src="images/icon-20-18-.svg" loading="lazy" alt="navbar icon" className="nav-close-icon" />
               </div>
             </div>
@@ -84,11 +111,18 @@ export default function Navbar() {
             </div>
           </nav>
           <div className="search-shop-con">
-            <a href="#cont"className="primary-button-black w-inline-block">
+            <a href="#contact-form" className="primary-button-black w-inline-block">
               <div className="button-text">Job post</div>
             </a>
           </div>
-          <div className="menu-button w-nav-button">
+          <div
+            className={`menu-button w-nav-button${isOpen ? " w--open" : ""}`}
+            onClick={toggleMenu}
+            role="button"
+            aria-label="Toggle menu"
+            aria-expanded={isOpen}
+            aria-controls="main-nav"
+          >
             <img src="images/icon-20-17-.svg" loading="lazy" alt="navbar icon" height="16" className="image-burger" />
           </div>
         </div>
