@@ -22,7 +22,7 @@ export default function Navbar() {
     <div data-animation="over-left" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" className="navbar w-nav">
       <div className="nav-container w-container">
         <div className="nav-menu-wrapper">
-          <a href="/home-1" className="brand w-nav-brand">
+          <a href="/#" className="brand w-nav-brand">
             <img src="/logo.svg" loading="lazy" alt="logo" height="74" className="navbar-logo" />
           </a>
           <nav
@@ -39,7 +39,7 @@ export default function Navbar() {
             }}
           >
             <div className="tablet-menu">
-              <a href="/home-1" className="brand-tablet w-nav-brand">
+              <a href="/#" className="brand-tablet w-nav-brand">
                 <img src="/logo.svg" loading="lazy" alt="logo" height="30" className="navbar-logo" />
               </a>
               <div className={`close-menu-button w-nav-button${isOpen ? " w--open" : ""}`} onClick={closeMenu} role="button" aria-label="Close menu" aria-expanded={isOpen}>
