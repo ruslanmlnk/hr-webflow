@@ -101,19 +101,19 @@ export default function WebflowInit() {
       typeof IntersectionObserver === "undefined"
         ? null
         : new IntersectionObserver(
-            (entries) => {
-              entries.forEach((entry) => {
-                const target = entry.target as HTMLElement;
-                const className = target.dataset.loopClass;
-                if (!className) return;
-                const prev = loopStates.get(target) ?? false;
-                if (prev === entry.isIntersecting) return;
-                loopStates.set(target, entry.isIntersecting);
-                updateLoopClass(className, entry.isIntersecting);
-              });
-            },
-            { rootMargin: "200px 0px 200px 0px", threshold: 0.01 }
-          );
+          (entries) => {
+            entries.forEach((entry) => {
+              const target = entry.target as HTMLElement;
+              const className = target.dataset.loopClass;
+              if (!className) return;
+              const prev = loopStates.get(target) ?? false;
+              if (prev === entry.isIntersecting) return;
+              loopStates.set(target, entry.isIntersecting);
+              updateLoopClass(className, entry.isIntersecting);
+            });
+          },
+          { rootMargin: "200px 0px 200px 0px", threshold: 0.01 }
+        );
 
     const registerLoopTarget = (el: HTMLElement, className: string) => {
       if (!loopObserver) {
@@ -198,12 +198,21 @@ export default function WebflowInit() {
           }
         });
       },
-      { threshold: 0.01, rootMargin: "0px 0px -20% 0px" }
+      { threshold: 0.01, rootMargin: "0px 0px -10% 0px" }
     );
+
+    const isAtTop = typeof window !== "undefined" && window.scrollY < 100;
 
     targets().forEach((target) => {
       const shouldAnimate = prepareTarget(target);
       if (shouldAnimate) {
+        if (isAtTop) {
+          const rect = target.getBoundingClientRect();
+          if (rect.top < window.innerHeight) {
+            reveal(target);
+            return;
+          }
+        }
         observer.observe(target);
       }
     });
@@ -222,7 +231,16 @@ export default function WebflowInit() {
           if (node.matches(selector)) {
             const shouldAnimate = prepareTarget(node);
             if (shouldAnimate) {
-              observer.observe(node);
+              if (isAtTop) {
+                const rect = node.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                  reveal(node);
+                } else {
+                  observer.observe(node);
+                }
+              } else {
+                observer.observe(node);
+              }
             }
           }
 
@@ -235,7 +253,16 @@ export default function WebflowInit() {
           node.querySelectorAll<HTMLElement>(selector).forEach((child) => {
             const shouldAnimate = prepareTarget(child);
             if (shouldAnimate) {
-              observer.observe(child);
+              if (isAtTop) {
+                const rect = child.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                  reveal(child);
+                } else {
+                  observer.observe(child);
+                }
+              } else {
+                observer.observe(child);
+              }
             }
           });
 
