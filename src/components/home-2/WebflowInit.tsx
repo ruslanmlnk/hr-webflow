@@ -198,24 +198,28 @@ export default function WebflowInit() {
           }
         });
       },
-      { threshold: 0.01, rootMargin: "0px 0px -10% 0px" }
+      { threshold: 0.01, rootMargin: "0px 0px 50px 0px" }
     );
 
-    const isAtTop = typeof window !== "undefined" && window.scrollY < 100;
-
-    targets().forEach((target) => {
-      const shouldAnimate = prepareTarget(target);
-      if (shouldAnimate) {
-        if (isAtTop) {
-          const rect = target.getBoundingClientRect();
-          if (rect.top < window.innerHeight) {
-            reveal(target);
-            return;
+    const checkInitialVisibility = () => {
+      const isAtTop = window.scrollY < 100;
+      targets().forEach((target) => {
+        const shouldAnimate = prepareTarget(target);
+        if (shouldAnimate) {
+          if (isAtTop) {
+            const rect = target.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+              reveal(target);
+              return;
+            }
           }
+          observer.observe(target);
         }
-        observer.observe(target);
-      }
-    });
+      });
+    };
+
+    // Small timeout to ensure layout is settled on mobile
+    setTimeout(checkInitialVisibility, 50);
 
     runFallbackLoops();
     window.addEventListener("load", runFallbackLoops, { once: true });
@@ -231,7 +235,8 @@ export default function WebflowInit() {
           if (node.matches(selector)) {
             const shouldAnimate = prepareTarget(node);
             if (shouldAnimate) {
-              if (isAtTop) {
+              const currentIsAtTop = window.scrollY < 100;
+              if (currentIsAtTop) {
                 const rect = node.getBoundingClientRect();
                 if (rect.top < window.innerHeight) {
                   reveal(node);
@@ -253,7 +258,8 @@ export default function WebflowInit() {
           node.querySelectorAll<HTMLElement>(selector).forEach((child) => {
             const shouldAnimate = prepareTarget(child);
             if (shouldAnimate) {
-              if (isAtTop) {
+              const currentIsAtTop = window.scrollY < 100;
+              if (currentIsAtTop) {
                 const rect = child.getBoundingClientRect();
                 if (rect.top < window.innerHeight) {
                   reveal(child);
